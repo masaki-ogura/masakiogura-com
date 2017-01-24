@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>研究テーマ - 小蔵 正輝</title>
 
-<meta name="keywords" content="Masaki Ogura, network science, spreading processes, control theory, switched linear systems, systems biology">
+<meta name="keywords" content="小蔵 正輝, ネットワーク科学, 伝播過程, 制御理論, 線形切替システム, システム生物学">
 
 <link rel="stylesheet" href="css/reset.css" type="text/css" />
 <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -51,12 +51,18 @@ License: Creative Commons Attribution
 <h1><a href="./index.html">Masaki Ogura</a></h1>
 <nav>
 <ul class="sf-menu dropdown">
-<li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-<li><a href="publications.html">Publications</a></li>
 <li>
-<a href="research.html">Research</a></li>
+<a href="index.html"><i class="fa fa-home"></i>Home</a>
 </li>
-<li><a href="research.html"><i class="fa fa-language"></i>English</a></li>
+<li>
+<a href="publications.html">Publications</a>
+</li>
+<li>
+<a href="research.html">Research</a>
+</li>
+<li>
+<a href="research.html"><i class="fa fa-language"></i>English</a>
+</li>
 </ul>
 <div class="clear"></div>
 </nav>
@@ -66,47 +72,73 @@ License: Creative Commons Attribution
 
 <div id="body" class="width">
 <section id="content" class="one-column">
-    <article>		
-		<img src="MasakiOgura.jpg" align="right" style="padding:8px" width="200"> 
+	
+	<h3>Temporal networks</h3>
+	<p>Even though most complex networks of practical relevance are time-varying (i.e., their connection patterns dynamically change over time), current analysis tools are still focused on static networks. In my research, I aim towards developing a rigorous, yet tractable, framework for the analysis, control, and optimization of dynamical processes taking place over temporal networks.</p>
+	
+	<h4>Containment of epidemic processes over adaptive networks</h4>
+	<p>Although the dynamics of epidemics and temporal networks are usually studied separately, there are many cases in which the two different dynamics affect each other. This can be illustrated by a pheomenon called social distancing, where healthy individuals avoid contact with infected individuals in order to protect themselves against the disease. In this research, we aim to develop an efficient algorithm to optimally tune the social-distancing rates in order to eradicate epidemic outbreaks in arbitrary networks [<a href="http://dx.doi.org/10.1016/j.sysconle.2016.06.008">PRE16</a>, <a href="http://dx.doi.org/10.1109/CDC.2015.7402772">CDC15</a>].
+	<center>
+		<img src="images/researchSocialDistancing.jpg" alt="social distancing" width="30%" />
+		<img src="images/asis.gif" alt="social distancing" width="25%" />
+		<img src="images/researchASISOptimalResourceAllocation.jpg" alt="social distancing" width="25%" />
+	</center></p>
+	
+	<h4>Spreading processes over large-scale temporal netowrks</h4>
+	<p> In this research, we study spreading processes over large-scale temporal networks with heterogeneous rates, non-identical edge-switching signals. In this direction, we proposed a novel model of temporal networks called aggregated-Markov edge-independent networks. Using spectral graph theory and the stability of switched linear systems, we have given an epiemic threshold in terms of the largest eigenvalues of a matrix whose size grows linearly with the number of nodes in the network [<a href="http://dx.doi.org/10.1109/TNSE.2016.2516346">TNSE</a>, <a href="http://dx.doi.org/10.1109/ACC.2015.7170991">ACC15</a>].
+	<center>
+	<img src="images/AMEI.jpg" alt="social distancing" width="60%" />
+	<img src="images/AMEIthreshold.jpg" alt="social distancing" width="37%" />
+	</center>
+	</p>
+	
+	
+	<h3>Control of spreading processes</h3>
+	
+	<h4>Optimal resource distribution</h4>
+	
+	<p>In this research, we consider the following epidemiological problem: Assume that we have access to vaccines that can be used to reduce the infection rates of individuals in the network, as well as antidotes that can be used to increase their recovery rates. Assuming that both vaccines and antidotes have an associated cost and that we are given a fixed budget, how should we distribute vaccines and antidotes throughout the individuals in the network in order to eradicate an epidemic outbreak at the maximum decay rate? In this direction, we have derived an optimal solution to this problem using an efficient optimization framework called geometric programming [<a href="http://dx.doi.org/10.1109/TCNS.2015.2489339">TCNS</a>, <a href="http://dx.doi.org/10.1109/CDC.2016.7798393">CDC16</a>, <a href="http://dx.doi.org/10.1109/ACC.2016.7525364">ACC15</a>].
+	<center>
+	<img src="images/SIR.gif" alt="social distancing" width="30%" />
+	<img src="images/SIRresource.jpg" alt="social distancing" width="42%" />
+	</center>
+	</p>
+	
+	<h3>Switched systems</h3>
+	
+	<h4>Stability analysis</h4>
+	 
+	[<a href="http://dx.doi.org/10.1016/j.automatica.2016.02.022">Automatica</a>, <a href="http://dx.doi.org/10.1016/j.sysconle.2014.10.009">SCL</a>, <a href="http://dx.doi.org/10.1137/130925177">SICON</a>]
+	<center>
+	<img src="images/tobestabilized.jpg" alt="social distancing" width="40%" />
+	<img src="images/stabilized.jpg" alt="social distancing" width="40%" />
+	</center>
+	
+	
+	<h4>Bet-hedging strategies in biological populations</h4>
+	
+	[<a href="http://dx.doi.org/10.1109/CDC.2016.7798903">CDC16</a>]
+	
+	<center>
+	<img src="images/betHedging.jpg" alt="social distancing" width="45%" />
+	<img src="images/betHedginganalysis.jpg" alt="social distancing" width="45%" />
+	</center>
+	
+	
+	<!--<h3>Past research</h3>
+	
+	<h4>Sampled-data signal processing</h4>
+	
+	<h4>Infinite-dimensional systems</h4>-->
+	
 
-		<p> I am a Postdoctoral Researcher in Electrical and Systems Engineering at the University of Pennsylvania. My primary research interest lies in the analysis and control of dynamical systems over large-scale, complex, and temporal networks. I am working under supervision of professor <a href="https://sites.google.com/site/victormpreciado/">Victor M. Preciado</a>. </p>
-		
-		<ul>
-		<li> <a href="https://scholar.google.com/citations?user=acKWFswAAAAJ&hl=en">Google Scholar</a></li>
-		<li> <a href="http://orcid.org/0000-0002-3857-3942"> ORCiD</a></li>
-		</ul>
-
-		<h3>Contacts</h3>
-		<ul>
-		<li> Email: ogura@seas.upenn.edu</li>
-		<li> Office: 363 Levine Hall, 3330 Walnut Street, Philadelphia, PA 19104-6309</li>
-		</ul>
-
-		 <h3>Latest news</h3>
-		<ul>
-		<li>Jan 2017: 2 papers accepted in <i><a href="http://acc2017.a2c2.org/">ACC2017</a></i>
-		<li>Dec 2016: <i><a href="http://cdc2016.ieeecss.org/">CDC2016</a></i>, Chair: Networked Control Systems IV
-		<li>Sep 2016: Seminar at <a href="https://sites.google.com/site/takiyama1106/home/seminar">Tokyo University of Agriculture and Technology</a>.</li>
-		<li>Aug 2016: Our paper published in <i>IEEE Transactions on Network Science and Engineering</i> 
-		was the <a href="http://ieee.ns02.info/xpl/topAccessedArticles.jsp?punumber=6488902&amp;topArticlesDate=May+2016">most popular 
-		article</a> in the journal during May 2016.</li>
-		<li>Jul 2016: 3 papers accepted in <i><a href="http://cdc2016.ieeecss.org/">CDC2016</a></i></li>
-		<li>Jul 2016: 2 papers accepted in <a href="http://www.necsys2016.ctrl.titech.ac.jp/"><i>NecSys'16</i></a></li>
-		<li>Jun 2016: Paper accepted in <i>Physical Review E</i> [<a href="http://arxiv.org/abs/1602.08456">arXiv</a>]</li>
-		<li>Feb 2016: Paper accepted in <i>Automatica</i> [<a href="http://arxiv.org/abs/1501.03474">arXiv</a>]</li>
-		</ul>
-
-	    <h3>Schedule</h3>
-	    <div class="responsiveCal">
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=1e1k1cep29cqvngf829akoir18%40group.calendar.google.com&amp;color=%23182C57&amp;src=kqg3ed89o7gkjknf09ff8vkdas%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-		    </div>
-	</article>
 </section>
 
 
 <div class="clear"></div>
 </div>
-<!--<footer>
+<footer>
+<!--
 <div class="footer-content width">
     <ul>
 	<li><h4>Proin accumsan</h4></li>
@@ -143,11 +175,12 @@ License: Creative Commons Attribution
             
             <div class="clear"></div>
         </div>
+		-->
         <div class="footer-bottom">
             <p>&copy; YourSite 2014. <a href="http://zypopwebtemplates.com/">Free HTML5 Templates</a> by ZyPOP</p>
          </div>
     </footer>
-	-->
+	
 </div>
 </body>
 </html>
