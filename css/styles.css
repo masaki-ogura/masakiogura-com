@@ -64,7 +64,7 @@ blockquote p {
 }
 
 p {
-	line-height: 1.9em;
+	line-height: 1.25em;
 	margin-bottom: 20px;
 }
 
@@ -220,7 +220,7 @@ li {
 }
 
 li p {
-	line-height: 1.9em;
+	line-height: 1.25em;
 	margin-bottom: 0px;
 }
 
