@@ -64,8 +64,7 @@ blockquote p {
 }
 
 p {
-	line-height: 1.5em;
-	margin-bottom: 10px;
+	line-height: 1.75em;
 }
 
 a {
@@ -216,12 +215,12 @@ ul, ol {
 }
 
 li {
-	padding-bottom: 5px;
+	padding-bottom: 0px;
 }
 
 li p {
-	line-height: 1.5em;
-	margin-bottom: 10px;
+	line-height: 1.75em;
+	margin-bottom: 0px;
 }
 
 
