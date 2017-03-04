@@ -216,11 +216,11 @@ ul, ol {
 }
 
 li {
-	padding-bottom: 1px;
+	padding-bottom: 5px;
 }
 
 li p {
-	line-height: 1.25em;
+	line-height: 1.5em;
 	margin-bottom: 0px;
 }
 
