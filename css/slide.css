@@ -2,30 +2,34 @@
 ---------------------------------------------------------------------------*/
 /*１枚目*/
 @keyframes slide1 {
-	0% {opacity: 0;}
-	10% {opacity: 1;}
-	30% {opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
+	0% {left: 0px;top: 0px;opacity: 0;}
+	10% {left: 0px;top: 0px;opacity: 1;}
+	30% {left: 0px;top: 0px;opacity: 1;}
+	31% {left: 0px;top: 0px;opacity: 0;}
+	40% {left: -100%;top: 0px;opacity: 0;}
+	100% {left: -100%;top: 0px;opacity: 0;}
 }
-/*２枚目*/
+
 @keyframes slide2 {
-	0% {opacity: 0;}
-	20% {opacity: 0;}
-	30% {opacity: 1;}
-	60% {opacity: 1;}
-	70% {opacity: 0;}
-	100% {opacity: 0;}
+	0% {left: -100%;top: 0px;opacity: 0;}
+	30% {left: -100%;top: 0px;opacity: 0;}
+	31% {left: 0px;top: 0px;opacity: 1;}
+	40% {left: 0px;top: 0px;opacity: 1;}
+	60% {left: 0px;top: 0px;opacity: 1;}
+	61% {left: 0px;top: 0px;opacity: 0;}
+	70% {left: -100%;top: 0px;opacity: 0;}
+	100% {left: -100%;top: 0px;opacity: 0;}
 }
-/*３枚目*/
+
 @keyframes slide3 {
-	0% {opacity: 0;}
-	50% {opacity: 0;}
-	60% {opacity: 1;}
-	85% {opacity: 1;}
-	95% {opacity: 0;}
-	100% {opacity: 0;}
+	0% {left: -100%;top: 0px;opacity: 0;}
+	60% {left: -100%;top: 0px;opacity: 0;}
+	61% {left: 0px;top: 0px;opacity: 1;}
+	70% {left: 0px;top: 0px;opacity: 1;}
+	90% {left: 0px;top: 0px;opacity: 1;}
+	100% {left: 0px;top: 0px;opacity: 0;}
 }
+
 
 /*mainimg
 ---------------------------------------------------------------------------*/
@@ -40,8 +44,8 @@
 }
 /*３枚画像の共通設定*/
 #slide1,#slide2,#slide3 {
-	-webkit-animation-duration: 12s;	/*実行する時間。「s」は秒の事。*/
-	animation-duration: 12s;			/*同上*/
+	-webkit-animation-duration: 24s;	/*実行する時間。「s」は秒の事。*/
+	animation-duration: 24s;			/*同上*/
 	-webkit-animation-iteration-count:infinite;	/*実行する回数。「infinite」は無限に繰り返す意味。*/
 	animation-iteration-count:infinite;			/*同上*/
 	position: absolute;left:0px;top:0px;width: 100%;height: auto;
@@ -60,7 +64,7 @@
 /*２枚目*/
 #slide2 {
 	-webkit-animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
-	animation-name: sli	de2;			/*同上*/
+	animation-name: slide2;			/*同上*/
 }
 /*３枚目*/
 #slide3 {
