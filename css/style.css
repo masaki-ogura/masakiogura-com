@@ -21,8 +21,12 @@ body {
 body#top {
 	background: linear-gradient(#25b1d9 300px, #fff 300px);	/*トップページの背景設定。画面の上から450pxまでが#25b1d9で、そこからすぐ#fffの白色に切り替える内容。*/
 }
-h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
-ul {list-style-type: none;}
+h1,h2,h3,h4,h5,p,ol,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+
+li::marker {
+  content: "ere";
+}
+
 ol {padding-left: 40px;padding-bottom: 15px;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
@@ -174,15 +178,15 @@ footer .pr {
 	margin-bottom: 15px;
 }
 .ta1, .ta1 td, .ta1 th {
-	border: 2px solid #000;	/*テーブルの枠線の幅、線種、色*/
-	padding: 10px;			/*テーブル内の余白*/
+	border: 1px solid #777;	/*テーブルの枠線の幅、線種、色*/
+	padding: 4px;			/*テーブル内の余白*/
 	word-break: break-all;
 }
 /*テーブル１行目に入った見出し部分*/
 .ta1 th.tamidashi {
 	width: auto;
 	text-align: left;	/*左よせ*/
-	background: #000;	/*背景色*/
+	background: #777;	/*背景色*/
 	color: #fff;	/*文字色*/
 }
 /*テーブルの左側ボックス*/
