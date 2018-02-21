@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Research Interests - Masaki Ogura</title>
+
+<meta name="keywords" content="Masaki Ogura, network science, spreading processes, control theory, switched linear systems, systems biology">
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<!--
+roseate, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+</head>
+<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86979390-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+<div id="container">
+
+<header> 
+<div class="width">
+<h1><a href="./index.html">Masaki Ogura</a></h1>
+<nav>
+<ul class="sf-menu dropdown">
+<li>
+<a href="index.html"><i class="fa fa-home"></i>Home</a>
+</li>
+<li>
+<a href="publications.html">Publications</a>
+</li>
+<li class="selected">
+<a href="research.html">Research</a>
+</li>
+<li>
+<a href="research_j.html"><i class="fa fa-language"></i>日本語（Japanese）</a>
+</li>
+</ul>
+<div class="clear"></div>
+</nav>
+</div>
+<div class="clear"></div>
+</header>
+
+<div id="body" class="width">
+<section id="content" class="one-column">
+	
+	<h3 id="temporalNetworks">Temporal networks</h3>
+	<p>Even though most complex networks of practical relevance are time-varying (i.e., their connection patterns dynamically change over time), current analysis tools are still focused on static networks. In my research, I aim towards developing a rigorous, yet tractable, framework for the analysis, control, and optimization of dynamical processes taking place over temporal networks.</p>
+	
+	<h4>Containment of epidemic processes over adaptive networks</h4>
+	<p>Although the dynamics of epidemics and temporal networks are usually studied separately, there are many cases in which the two different dynamics affect each other. This can be illustrated by a pheomenon called social distancing, where healthy individuals avoid contact with infected individuals in order to protect themselves against the disease. In this research, we aim to develop an efficient algorithm to optimally tune the social-distancing rates in order to eradicate epidemic outbreaks in arbitrary networks [<a href="http://dx.doi.org/10.1016/j.sysconle.2016.06.008">PRE16</a>, <a href="http://dx.doi.org/10.1109/CDC.2015.7402772">CDC15</a>].
+	<center>
+		<img src="images/researchSocialDistancing.jpg" alt="social distancing" width="30%" />
+		<img src="images/asis.gif" alt="social distancing" width="25%" />
+		<img src="images/researchASISOptimalResourceAllocation.jpg" alt="social distancing" width="25%" />
+	</center></p>
+	
+	<h4>Spreading processes over large-scale temporal netowrks</h4>
+	<p> In this research, we study spreading processes over large-scale temporal networks with heterogeneous rates, non-identical edge-switching signals. In this direction, we proposed a novel model of temporal networks called aggregated-Markov edge-independent networks. Using spectral graph theory and the stability of switched linear systems, we have given an epiemic threshold in terms of the largest eigenvalues of a matrix whose size grows linearly with the number of nodes in the network [<a href="http://dx.doi.org/10.1109/TNSE.2016.2516346">TNSE</a>, <a href="http://dx.doi.org/10.1109/ACC.2015.7170991">ACC15</a>].
+	<center>
+	<img src="images/AMEI.jpg" alt="social distancing" width="60%" />
+	<img src="images/AMEIthreshold.jpg" alt="social distancing" width="37%" />
+	</center>
+	</p>
+	
+	
+	<h3 id="controlOfNetworks">Control of networks</h3>
+	
+	<h4>Optimal resource distribution</h4>
+	
+	<p>In this research, we consider the following epidemiological problem: Assume that we have access to vaccines that can be used to reduce the infection rates of individuals in the network, as well as antidotes that can be used to increase their recovery rates. Assuming that both vaccines and antidotes have an associated cost and that we are given a fixed budget, how should we distribute vaccines and antidotes throughout the individuals in the network in order to eradicate an epidemic outbreak at the maximum decay rate? In this direction, we have derived an optimal solution to this problem using an efficient optimization framework called geometric programming [<a href="http://dx.doi.org/10.1109/TCNS.2015.2489339">TCNS</a>, <a href="http://dx.doi.org/10.1109/CDC.2016.7798393">CDC16</a>, <a href="http://dx.doi.org/10.1109/ACC.2016.7525364">ACC15</a>].
+	<center>
+	<img src="images/SIR.gif" alt="social distancing" width="30%" />
+	<img src="images/SIRresource.jpg" alt="social distancing" width="42%" />
+	</center>
+	</p>
+	
+	<h3 id="switchedSystems">Switched systems</h3>
+	
+	<h4>Stability analysis</h4>
+	 
+	<p>[<a href="http://dx.doi.org/10.1016/j.automatica.2016.02.022">Automatica</a>, <a href="http://dx.doi.org/10.1016/j.sysconle.2014.10.009">SCL</a>, <a href="http://dx.doi.org/10.1137/130925177">SICON</a>]
+	<center>
+	<img src="images/tobestabilized.jpg" alt="social distancing" width="40%" />
+	<img src="images/stabilized.jpg" alt="social distancing" width="40%" />
+	</center></p>
+	
+	
+	<h4>Bet-hedging strategies in biological populations</h4>
+	
+	<p>[<a href="http://dx.doi.org/10.1109/CDC.2016.7798903">CDC16</a>]
+	<center>
+	<img src="images/betHedging.jpg" alt="social distancing" width="45%" />
+	<img src="images/betHedginganalysis.jpg" alt="social distancing" width="45%" />
+	</center></p>
+	
+	
+	<!--<h3>Past research</h3>
+	
+	<h4>Sampled-data signal processing</h4>
+	
+	<h4>Infinite-dimensional systems</h4>-->
+	
+
+</section>
+
+
+<div class="clear"></div>
+</div>
+<footer>
+<!--
+<div class="footer-content width">
+    <ul>
+	<li><h4>Proin accumsan</h4></li>
+	<li><a href="#">Rutrum nulla a ultrices</a></li>
+	<li><a href="#">Blandit elementum</a></li>
+	<li><a href="#">Proin placerat accumsan</a></li>
+	<li><a href="#">Morbi hendrerit libero </a></li>
+	<li><a href="#">Curabitur sit amet tellus</a></li>
+    </ul>
+
+    <ul>
+	<li><h4>Condimentum</h4></li>
+	<li><a href="#">Curabitur sit amet tellus</a></li>
+	<li><a href="#">Morbi hendrerit libero </a></li>
+	<li><a href="#">Proin placerat accumsan</a></li>
+	<li><a href="#">Rutrum nulla a ultrices</a></li>
+	<li><a href="#">Cras dictum</a></li>
+    </ul>
+
+    <ul>
+	<li><h4>Suspendisse</h4></li>
+	<li><a href="#">Morbi hendrerit libero </a></li>
+	<li><a href="#">Proin placerat accumsan</a></li>
+	<li><a href="#">Rutrum nulla a ultrices</a></li>
+	<li><a href="#">Curabitur sit amet tellus</a></li>
+	<li><a href="#">Donec in ligula nisl.</a></li>
+    </ul>
+
+    <ul class="endfooter">
+
+
+</li>
+            </ul>
+            
+            <div class="clear"></div>
+        </div>
+		-->
+        <div class="footer-bottom">
+            <p>&copy; YourSite 2014. <a href="http://zypopwebtemplates.com/">Free HTML5 Templates</a> by ZyPOP</p>
+         </div>
+    </footer>
+	
+</div>
+</body>
+</html>
