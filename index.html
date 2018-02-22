@@ -17,57 +17,6 @@
 <![endif]-->
 </head>
 
-<style type="text/css">
-<!--
-.STYLE1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 27px;
-	color: #333333;
-	font-weight: bold;
-}
-.STYLE2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #333333;
-}
-.STYLE3 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	color: #333333;
-}
-.STYLE4 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #333333;
-}
-.STYLE5 {
-	font-size: 18px;
-	color: #333333;
-}
-.STYLE7 {
-	font-size: 16px;
-	font-weight: bold;
-}
-a:link {
-	color: #990000;
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-a:active {
-	text-decoration: none;
-}
-.STYLE8 {color: #F0F0F0}
--->
-</style>
-</head>
-
-
 <body id="top">
 
 <script>
@@ -89,10 +38,19 @@ a:active {
 <nav id="menubar">
 <ul>
 <li><a href="bio.html">About me</a></li>
-<li><a href="publications.html">Publications</a></li>
 <li><a href="research.html">Research</a></li>
+<li><a href="publications.html">Publications</a></li>
 </ul>
 </nav>
+
+<nav id="menubar-s">
+<ul>
+<li><a href="bio.html">About me</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="publications.html">Publications</a></li>
+</ul>
+</nav>
+
 </header>
 
 <aside id="mainimg">
@@ -102,22 +60,12 @@ a:active {
 
 <div id="contents">
 
-[English/<a href="index_j.html">日本語</a>]
-
-<!--<div align="center">
-<span class="STYLE1">Masaki Ogura</span>
-<br>
-<span class="STYLE2">Assistant Professor</span>
-<br>
-<span class="STYLE2">Graduate School of Information Science</span>
-<br>
-<span class="STYLE2">Nara Institute of Science and Technology</span>
-<p class="STYLE2 STYLE2" style="margin-top: 2px; margin-bottom: 1px">Email: <a href="mailto:sroy@eecs.wsu.edu" class="STYLE8">oguram@is.naist.jp</a></p>
-</div>-->
-
+<p>[English/<a href="index_j.html">日本語</a>]</p>
 
 <section id="new">
-<h2 id="newinfo_hdr" class="close">Latest news</h2>
+
+<h2 id="newinfo_hdr">Latest news</h2>
+
 <dl id="newinfo">
 <dt>Jan 2018</dt>
 <dd>Paper accepted in <i>Systems & Control Letters</i> [<a href="http://arxiv.org/abs/1706.08602">arXiv</a>]</dd>
@@ -154,10 +102,21 @@ a:active {
 </div>
 <!--/container-->
 
-<!--スマホ用更新情報　480px以下-->
+
+
+<!--スマホ用更新情報　800px以下-->
 <script type="text/javascript">
-if (OCwindowWidth() <= 480) {
+if (OCwindowWidth() <= 800) {
 	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニューの３本バー-->
+<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
 }
 </script>
 

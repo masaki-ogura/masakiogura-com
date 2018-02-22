@@ -50,7 +50,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 #container {
 	width: 80%;			/*ブロックの幅を画面の80%にする設定。*/
-	max-width: 1000px;	/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
+	max-width: 800px;	/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
 	margin: 0 auto;		/*HP画面の左右中央に表示させる設定*/
 }
 
@@ -88,6 +88,16 @@ header {
 #menubar li a:hover {
 	background: url(../images/icon_arrow1.png) no-repeat center top;	/*矢印アイコンを出す設定。矢印が不要ならここは丸ごと削除する。*/
 }
+
+/*スマホ用メニューを表示させない*/
+#menubar-s {
+	display: none;
+}
+/*３本バーアイコンを表示させない*/
+#menubar_hdr {
+	display: none;
+}
+
 
 /*コンテンツ（見出しバーや文字などが入っているブロック）
 ---------------------------------------------------------------------------*/
@@ -208,6 +218,97 @@ footer .pr {
 .pr {font-size: 10px;}
 
 
+@media screen and (max-width:800px){
+	
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666;	/*全体の文字色*/
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 14px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	-webkit-text-size-adjust: none;
+	background: #25b1d9;	/*背景色（古いブラウザ用）*/
+	background: linear-gradient(#25b1d9 150px, #fff 150px);	/*トップページ以外の背景設定。画面の上から150pxまでが#25b1d9で、そこからすぐ#fffの白色に切り替える内容。*/
+}
+
+	
+header {
+	text-align: center;		/*headerの中身をセンタリングさせる設定*/
+	height: 150px;			/*headerの高さ*/
+	background: #25b1d9;	/*headerの背景色*/
+}
+
+#logo  img {
+	width: 400px;			/*画像幅*/
+	margin-top: 5px;		/*画像の上に空けるスペース*/
+	margin-bottom: 5px;	/*画像の下に空けるスペース*/
+}
+
+/*スマホ用メニューを非表示から表示に切り替える*/
+#menubar-s {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	background: rgba(0,0,0,0.2);
+	border-top: 1px solid #fff;
+	width: 80%;
+	height: 100%;
+	z-index: 10;
+	animation-name: menu1;		/*上のkeyframesの名前*/
+	animation-duration: 0.5S;	/*アニメーションの実行時間。0.5秒。*/
+	animation-fill-mode: both;	/*アニメーションの完了後、最後のキーフレームを維持する*/
+}
+/*メニュー１個あたりの設定*/
+
+#menubar-s li {
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+}
+
+#menubar-s ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+}
+
+#menubar-s li a {
+	display: block;text-decoration: none;
+	padding: 0px 5%;
+	border-bottom: 1px solid #fff;
+	background: #2b3f7f;
+	color: #fff;
+	font-size: 125%;
+}
+/*PC用メニューを非表示にする*/
+#menubar {
+	display: none;
+}
+
+/*３本バーアイコン設定
+---------------------------------------------------------------------------*/
+/*３本バーブロック*/
+#menubar_hdr {
+	display: block;
+	position: absolute;
+	top: 28px;		/*上から28pxの場所に配置*/
+	right: 5%;		/*右から5%の場所に配置*/
+	width: 30px;	/*幅*/
+	border: 1px solid #000;	/*枠線の幅、線種、色*/
+	padding: 12px 10px 5px;	/*上、左右、下へのボックス内余白*/
+	background: #fff;		/*背景色*/
+}
+/*３本のバー（1本あたり）*/
+#menubar_hdr span {
+	display: block;
+	border-top: 3px solid #000;	/*枠線の幅、線種、色*/
+	margin-bottom: 7px;			/*バー同士の余白*/
+}
+
+}
+
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -242,3 +343,4 @@ footer .pr {
 }
 
 }
+

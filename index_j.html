@@ -42,6 +42,15 @@
 <li><a href="publications_j.html">研究業績</a></li>
 </ul>
 </nav>
+<nav id="menubar-s">
+<ul>
+<li><a href="bio_j.html">自己紹介</a></li>
+<li><a href="toStudents_j.html">学生へ</a></li>
+<li><a href="research_j.html">研究紹介</a></li>
+<li><a href="publications_j.html">研究業績</a></li>
+</ul>
+</nav>
+
 </header>
 
 <aside id="mainimg">
@@ -56,7 +65,9 @@
 [<a href="index.html">English</a>/日本語]
 
 <section id="new">
-<h2 id="newinfo_hdr" class="close">最新情報</h2>
+
+<h2 id="newinfo_hdr">最新情報</h2>
+
 <dl id="newinfo">
 <dt>Mar 2018</dt>
 <dd>M1多川が<a href="http://mscs2018.sice-ctrl.jp/">第５回 制御部門マルチシンポジウム</a>で研究成果「<a href="https://www.gakkai-web.net/gakkai/sice-ctrl/temporary/program.html#pointSu23">Activity Driven Networkにおける平均合意の収束性能解析</a>」を発表します．</dd>
@@ -87,7 +98,7 @@
 </section>
 
 </div>
-<!--/contents-->
+
 
 <footer>
 <small>Copyright&copy; <a href="index.html">Masaki Ogura</a> All Rights Reserved.</small>
@@ -97,10 +108,19 @@
 </div>
 <!--/container-->
 
-<!--スマホ用更新情報　480px以下-->
+<!--スマホ用更新情報　800px以下-->
 <script type="text/javascript">
-if (OCwindowWidth() <= 480) {
+if (OCwindowWidth() <= 800) {
 	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニューの３本バー-->
+<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
 }
 </script>
 
