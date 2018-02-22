@@ -23,8 +23,13 @@ body#top {
 }
 h1,h2,h3,h4,h5,p,ol,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
 
-li::marker {
-  content: "ere";
+ul {
+	margin-top: 0px;
+}
+
+li {
+	margin-top: 0px;
+	padding: 0px 14px 7px;	/*上、左右、下への余白*/
 }
 
 ol {padding-left: 40px;padding-bottom: 15px;}
@@ -45,7 +50,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 #container {
 	width: 80%;			/*ブロックの幅を画面の80%にする設定。*/
-	max-width: 800px;	/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
+	max-width: 1000px;	/*上のwidth指定の追加設定。幅1000pxを最大幅に設定し、それ以上広げない。*/
 	margin: 0 auto;		/*HP画面の左右中央に表示させる設定*/
 }
 
