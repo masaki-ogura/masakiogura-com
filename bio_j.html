@@ -41,7 +41,14 @@ ga('send', 'pageview');
 <li><a href="research_j.html">研究紹介</a></li>
 <li><a href="publications_j.html">研究業績</a></li>
 </ul>
-
+</nav>
+<nav id="menubar-s">
+<ul>
+<li><a href="bio_j.html">自己紹介</a></li>
+<li><a href="toStudents_j.html">学生へ</a></li>
+<li><a href="research_j.html">研究紹介</a></li>
+<li><a href="publications_j.html">研究業績</a></li>
+</ul>
 </nav>
 </header>
 <div id="contents">
@@ -166,6 +173,23 @@ if (OCwindowWidth() <= 480) {
 open_close("newinfo_hdr", "newinfo");
 }
 </script>
+
+<!--スマホ用更新情報　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニューの３本バー-->
+<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
 
 </body>
 </html>
