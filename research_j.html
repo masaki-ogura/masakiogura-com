@@ -74,22 +74,34 @@ ga('send', 'pageview');
 
 <p>いろいろ不思議なことがあります．まず，学級閉鎖はいつすれば良いのでしょうか．例えば奈良県では<a href="http://www.pref.nara.jp/secure/36763/20091228kijyun.pdf">10%～15%の欠席率が一つの目安となっています（2009年の情報）</a>．それでは，10%や15%の数字の根拠は何でしょうか．この<a href="http://www.hws-kyokai.or.jp/images/ronbun/all/201207-02.pdf">論文</a>では，「実際に学級閉鎖をどの時期にどの程度の日数で実施すべきかについての知見はほとんどない」とされています．そもそも，学級閉鎖は「役に立つ」のでしょうか．この<a href="http://www.mhlw.go.jp/kinkyu/kenkou/influenza/hourei/2009/09/dl/info0924-01.pdf">報告書</a>では，「通常の学級閉鎖」には「地域への感染拡大を抑える効果はほとんどないと考えられている」ともあります．なぜかというと，通常の学級閉鎖は「消極的」だからだそうです．欠席が増えてから閉鎖するのでは遅すぎて，感染拡大が起こる前に前もって「積極的」に学級閉鎖をするのが有効だとされているようです．</p>
 
-<p>我々の研究グループでは，学級閉鎖やそれを一般化した<a href="http://www.terumo-taion.jp/fever/pandemic/05.html">社会距離戦略</a>の有効性を検証しています．特に，適応的に変化するネットワーク上の感染症のダイナミクスの理解およびその最適な制御手法の開発を目標としています[<a href="http://dx.doi.org/10.1016/j.sysconle.2016.06.008">PRE16</a>, <a href="http://dx.doi.org/10.1109/CDC.2015.7402772">CDC15</a>].
-</p>
-<center>
-	<img src="images/researchSocialDistancing.jpg" alt="social distancing" width="300" />
-	<img src="images/asis.gif" alt="social distancing" width="330" />
-	<img src="images/researchASISOptimalResourceAllocation.jpg" alt="social distancing" width="33%" />
-</center>
+<p>我々の研究グループでは，学級閉鎖やそれを一般化した<a href="http://www.terumo-taion.jp/fever/pandemic/05.html">社会距離戦略</a>の有効性を検証しています．特に，適応的に変化するネットワーク上の感染症のダイナミクスの理解およびその最適な制御手法の開発を目標としています．
+
+<h5>関連する論文</h5>
+<ul> 
+<li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Epidemic processes over adaptive
+  state-dependent networks,&rdquo; <em>Physical Review E</em>, vol.&nbsp;93, p. 062316,
+  2016.
+[&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevE.93.062316">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1602.08456">プレプリント</a>&nbsp;]
+</ul>
 </div>
+
 
 
 <div class="list" id="betHedging">
 <img src="images/E._coli_Bacteria.jpg">
 <h4>大腸菌の両賭け戦略</h4>
-<p>賭けをしたことはありますか？私はありません（ということにしておきます）が，じつは大腸菌も賭けをすることが知られています．「未来の環境が住みやすい」（例：栄養が多い）か「住みにくい」（例：栄養が少ない）かに賭けます（実際には大腸菌が意思を持って賭けをするわけではないのであしからず）．住みやすい方に賭けた大腸菌は，いつも通り成長しようとします．一方，住みにくい方に賭けた大腸菌は，成長はやめておいて身を守るモードに入ります．こうすると，実際に住みにくくなった場合にも身を守れます．こういった大腸菌の機構は両賭け戦略（bet-hedging strategy）として知られています．
+<p>賭けをしたことはありますか？私はありません（ということにしておきます）が，じつは大腸菌も賭けをすることが知られています．「未来の環境が住みやすい」（例：栄養が多い）か「住みにくい」（例：栄養が少ない）かに賭けます（実際には大腸菌が意思を持って賭けをするわけではないのであしからず）．住みやすい方に賭けた大腸菌は，いつも通り成長しようとします．一方，住みにくい方に賭けた大腸菌は，成長はやめておいて身を守るモードに入ります．こうすると，実際に住みにくくなった場合にも身を守れます．こういった大腸菌の機構は<a href="https://www.natureasia.com/ja-jp/nature/462/7269/nature08504/%E4%B8%A1%E8%B3%AD%E3%81%91%E6%88%A6%E7%95%A5%E3%81%AE%E5%AE%9F%E9%A8%93%E7%9A%84%E9%80%B2%E5%8C%96">両賭け戦略</a>（<a href="https://en.wikipedia.org/wiki/Bet_hedging_(biology)">bet-hedging strategy</a>）として知られています．
 </p>
-<p>さて，二つの選択肢がある時，どれくらいの割合で住みやすい／住みにくいに賭けをするべきでしょうか．本研究では，環境の変化がマルコフ的であるとき，賭けの割合が大腸菌の増殖率に及ぼす影響を数理モデルを使って解析しました．</p>
+<p>さて，二つの選択肢がある時，どれくらいの割合で住みやすい／住みにくいに賭けをすると一番良いのでしょうか．本研究では，環境の変化がマルコフ的であるとき，賭けの割合が大腸菌の増殖率に及ぼす影響を数理モデルを使って解析しました．
+
+<h5>関連する論文</h5>
+<ul> 
+<li> M.&nbsp;Ogura, M.&nbsp;Wakaiki, H.&nbsp;Rubin, and V.&nbsp;M. Preciado, &ldquo;Delayed bet-hedging
+  resilience strategies under environmental fluctuations,&rdquo; <em>Physical
+  Review E</em>, vol.&nbsp;95, p. 052404, 2017. [&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevE.95.052404">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1702.00094">プレプリント</a>&nbsp;]
+</ul>
 </div>
 
 
@@ -106,13 +118,54 @@ ga('send', 'pageview');
 <h4>遠隔で上手くものを操る―ネットワーク化制御</h4>
 <p>近年の情報技術の発展により，インターネットを介した遠隔制御が実現してきています．ネットワークを使うと配線で楽をできますが，同時に課題も生まれます．たとえば帯域の制限や通信の遅れなどです．この研究では，そういったネットワークの制限のもとで上手にものを操る手法を開発しています．
 </p>
+<h5>関連する論文</h5>
+<ul> 
+<li> M.&nbsp;Ogura, A.&nbsp;Cetinkaya, T.&nbsp;Hayakawa, and V.&nbsp;M. Preciado, &ldquo;State feedback
+  control of Markov jump linear systems with hidden-Markov mode observation,&rdquo;
+  <em>Automatica</em>, vol.&nbsp;89, pp. 65-72, 2018.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.automatica.2017.11.022">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1508.00232">プレプリント</a>&nbsp;]
+
+<li> M.&nbsp;Wakaiki, M.&nbsp;Ogura, and J.&nbsp;P. Hespanha, &ldquo;Linear quadratic control for
+  sampled-data systems with stochastic delays,&rdquo; in <em>2017 American
+  Control Conference</em>, 2017, pp. 1978-1983.
+[&nbsp;<a href="http://dx.doi.org/10.23919/ACC.2017.7963242">論文</a>&nbsp;| 
+<a href="https://goo.gl/BkVeOP">プレプリント</a>&nbsp;]
+</ul>
+
 </div>
 
 
 <div class="list">
 <img src="images/tobestabilized.jpg">
 <h4>切り替えシステムの数理</h4>
-<p>種々のクラスの線形切替システムの安定性判別を行っています．特に，Markov regenerative processという広いクラスの確率過程によって表現される線形切替システムの安定性が，ある行列の固有値により特徴づけられることを導きました．[<a href="http://dx.doi.org/10.1016/j.automatica.2016.02.022">Automatica</a>, <a href="http://dx.doi.org/10.1016/j.sysconle.2014.10.009">SCL</a>, <a href="http://dx.doi.org/10.1137/130925177">SICON</a>]</div>
+<p>種々のクラスの線形切替システムの安定性判別を行っています．特に，Markov regenerative processという広いクラスの確率過程によって表現される線形切替システムの安定性が，ある行列の固有値により特徴づけられることを導きました．
+
+<h5>関連する論文</h5>
+<ul> 
+<li> M.&nbsp;Ogura, V.&nbsp;M. Preciado, and R.&nbsp;M. Jungers, &ldquo;Efficient method for computing
+  lower bounds on the <em>p</em>-radius of switched linear systems,&rdquo; <em>Systems
+  &amp; Control Letters</em>, vol.&nbsp;94, pp. 159-164, 2016.
+
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.sysconle.2016.06.008">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1503.03034">プレプリント</a>&nbsp;]
+
+
+<li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Stability of Markov regenerative switched
+  linear systems,&rdquo; <em>Automatica</em>, vol.&nbsp;69, pp. 169-175, 2016.
+
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.automatica.2016.02.022">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1501.03474">プレプリント</a>&nbsp;]
+
+<li> M.&nbsp;Ogura and C.&nbsp;F. Martin, &ldquo;Stability analysis of linear systems subject to
+  regenerative switchings,&rdquo; <em>Systems &amp; Control Letters</em>, vol.&nbsp;75, pp.
+  94-100, 2015.
+
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.sysconle.2014.10.009">論文</a>&nbsp;]
+
+
+</ul>
+</div>
 
 <!--
 <h3 id="temporalNetworks">テンポラルネットワーク</h3>
