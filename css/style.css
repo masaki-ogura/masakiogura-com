@@ -239,8 +239,9 @@ header {
 	background: #25b1d9;	/*headerの背景色*/
 }
 
+
 #logo  img {
-	width: 400px;			/*画像幅*/
+	width: 100%;			/*画像幅*/
 	margin-top: 5px;		/*画像の上に空けるスペース*/
 	margin-bottom: 5px;	/*画像の下に空けるスペース*/
 }
@@ -293,17 +294,17 @@ header {
 #menubar_hdr {
 	display: block;
 	position: absolute;
-	top: 28px;		/*上から28pxの場所に配置*/
-	right: 5%;		/*右から5%の場所に配置*/
+	top: 30px;		/*上から28pxの場所に配置*/
+	right: 0%;		/*右から5%の場所に配置*/
 	width: 30px;	/*幅*/
-	border: 1px solid #000;	/*枠線の幅、線種、色*/
+	border: 1px solid #333;	/*枠線の幅、線種、色*/
 	padding: 12px 10px 5px;	/*上、左右、下へのボックス内余白*/
 	background: #fff;		/*背景色*/
 }
 /*３本のバー（1本あたり）*/
 #menubar_hdr span {
 	display: block;
-	border-top: 3px solid #000;	/*枠線の幅、線種、色*/
+	border-top: 3px solid #333;	/*枠線の幅、線種、色*/
 	margin-bottom: 7px;			/*バー同士の余白*/
 }
 
@@ -312,13 +313,53 @@ header {
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:480px){
+@media screen and (max-width:560px){
+	
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666;	/*全体の文字色*/
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 14px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	-webkit-text-size-adjust: none;
+	background: #25b1d9;	/*背景色（古いブラウザ用）*/
+	background: linear-gradient(#25b1d9 125px, #fff 125px);	/*トップページ以外の背景設定。画面の上から150pxまでが#25b1d9で、そこからすぐ#fffの白色に切り替える内容。*/
+}
+body#top {
+	background: linear-gradient(#25b1d9 125px, #fff 125px);	/*トップページの背景設定。画面の上から450pxまでが#25b1d9で、そこからすぐ#fffの白色に切り替える内容。*/
+}
 
 /*コンテナー（ホームページを囲む一番外側のブロック）
 ---------------------------------------------------------------------------*/
 #container {
 	width: 100%;	/*ブロックの幅を画面の100%にする設定。*/
 }
+
+#logo  img {
+	width: 100%;			/*画像幅*/
+	margin-top: 40px;		/*画像の上に空けるスペース*/
+	margin-bottom: 5px;	/*画像の下に空けるスペース*/
+}
+
+#menubar_hdr {
+	display: block;
+	position: absolute;
+	top: 0px;		/*上から0pxの場所に配置*/
+	right: 0%;		/*右から0%の場所に配置*/
+	width: 30px;	/*幅*/
+	border: 1px solid #333;	/*枠線の幅、線種、色*/
+	padding: 11px 5px 5px;	/*上、左右、下へのボックス内余白*/
+	background: #fff;		/*背景色*/
+}
+/*３本のバー（1本あたり）*/
+#menubar_hdr span {
+	display: block;
+	border-top: 2px solid #333;	/*枠線の幅、線種、色*/
+	margin-bottom: 5px;			/*バー同士の余白*/
+}
+
+
 
 /*メニュー
 ---------------------------------------------------------------------------*/
