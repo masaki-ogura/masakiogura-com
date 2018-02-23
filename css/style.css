@@ -329,6 +329,20 @@ body#top {
 	background: linear-gradient(#25b1d9 125px, #fff 125px);	/*トップページの背景設定。画面の上から450pxまでが#25b1d9で、そこからすぐ#fffの白色に切り替える内容。*/
 }
 
+#menubar-s {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	background: rgba(0,0,0,0.2);
+	border-top: 1px solid #fff;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	animation-name: menu1;		/*上のkeyframesの名前*/
+	animation-duration: 0.5S;	/*アニメーションの実行時間。0.5秒。*/
+	animation-fill-mode: both;	/*アニメーションの完了後、最後のキーフレームを維持する*/
+}
+
 /*コンテナー（ホームページを囲む一番外側のブロック）
 ---------------------------------------------------------------------------*/
 #container {
