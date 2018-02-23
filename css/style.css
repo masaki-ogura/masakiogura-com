@@ -239,14 +239,8 @@ header {
 	background: #25b1d9;	/*headerの背景色*/
 }
 
-<<<<<<< HEAD
-
 #logo  img {
 	width: 100%;			/*画像幅*/
-=======
-#logo  img {
-	width: 400px;			/*画像幅*/
->>>>>>> 1660ccf8a0a4e0d344b28a1f0664cc1dd7b13d23
 	margin-top: 5px;		/*画像の上に空けるスペース*/
 	margin-bottom: 5px;	/*画像の下に空けるスペース*/
 }
@@ -299,28 +293,17 @@ header {
 #menubar_hdr {
 	display: block;
 	position: absolute;
-<<<<<<< HEAD
-	top: 30px;		/*上から28pxの場所に配置*/
-	right: 0%;		/*右から5%の場所に配置*/
-	width: 30px;	/*幅*/
-	border: 1px solid #333;	/*枠線の幅、線種、色*/
-=======
 	top: 28px;		/*上から28pxの場所に配置*/
 	right: 5%;		/*右から5%の場所に配置*/
 	width: 30px;	/*幅*/
 	border: 1px solid #000;	/*枠線の幅、線種、色*/
->>>>>>> 1660ccf8a0a4e0d344b28a1f0664cc1dd7b13d23
 	padding: 12px 10px 5px;	/*上、左右、下へのボックス内余白*/
 	background: #fff;		/*背景色*/
 }
 /*３本のバー（1本あたり）*/
 #menubar_hdr span {
 	display: block;
-<<<<<<< HEAD
 	border-top: 3px solid #333;	/*枠線の幅、線種、色*/
-=======
-	border-top: 3px solid #000;	/*枠線の幅、線種、色*/
->>>>>>> 1660ccf8a0a4e0d344b28a1f0664cc1dd7b13d23
 	margin-bottom: 7px;			/*バー同士の余白*/
 }
 
@@ -356,6 +339,10 @@ body#top {
 	width: 100%;			/*画像幅*/
 	margin-top: 40px;		/*画像の上に空けるスペース*/
 	margin-bottom: 5px;	/*画像の下に空けるスペース*/
+}
+
+#menubar {
+	display: none;
 }
 
 #menubar_hdr {
