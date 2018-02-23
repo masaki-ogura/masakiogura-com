@@ -345,7 +345,7 @@ body#top {
 #menubar_hdr {
 	display: block;
 	position: absolute;
-	top: 0px;		/*上から0pxの場所に配置*/
+	top: 1px;		/*上から0pxの場所に配置*/
 	right: 0%;		/*右から0%の場所に配置*/
 	width: 30px;	/*幅*/
 	border: 1px solid #333;	/*枠線の幅、線種、色*/
