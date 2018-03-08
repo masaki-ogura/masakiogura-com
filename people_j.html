@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>研究紹介－小蔵 正輝</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta name="description" content="ここにサイト説明を入れます">-->
+<meta name="keywords" content="Masaki Ogura, network science, spreading processes, control theory, switched linear systems, systems biology">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slide.css">
+<script type="text/javascript" src="js/openclose.js"></script>
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-86979390-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index_j.html"><img src="images/logo.png" alt="Masaki Ogura"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="bio_j.html">自己紹介</a></li>
+<li><a href="toStudents_j.html">学生へ</a></li>
+<li><a href="research_j.html">研究紹介</a></li>
+<li><a href="people_j.html">人</a></li>
+<li><a href="publications_j.html">研究業績</a></li>
+</ul>
+</nav>
+<nav id="menubar-s">
+<ul>
+<li><a href="bio_j.html">自己紹介</a></li>
+<li><a href="toStudents_j.html">学生へ</a></li>
+<li><a href="research_j.html">研究紹介</a></li>
+<li><a href="people_j.html">人</a></li>
+<li><a href="publications_j.html">研究業績</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="contents">
+
+<h2>はじめに</h2>
+
+我々のグループでは，制御工学とネットワーク科学を活用して，いろいろな大規模な現象の原理を解明し，またよりよく操るための研究をしています．理論を究めるというよりは，既存の理論・方法論を対象にあわせてうまく加工・応用することが多いです．以下にいくつか例をあげます．だいたい，上にあればあるほど新しいです．
+
+<div class="list" id="harada">
+<img src="images/harada.png">
+<h4>最も良い製品開発チームを編成する</h4>
+<p>近年，製品開発を取り巻く環境は厳しさを増しています．技術の急速な発展により企業間の技術開発競争は激化し，高性能で高品質な製品が要求されるようになっています．さらに，市場のグローバル化により消費者のニーズの多様化が進んでおり，価格競争も激しくなっています．こうした競争の中で企業が生き残っていくためには，製品開発の効率を上げ，高性能で高品質な製品を短期間で開発する必要があります．したがって，製品開発を行う前に企業が投入できる限られた人的・物的資源をどこにどれだけ投入するかの計画を立てることはますます重要になっています．しかし，従来の計画手法は製品開発の静的な解析が多く，本来製品開発が持つ時々刻々と変化する動的な側面を考慮できていませんでした．</p>
+<p>本研究では制御工学の視点から製品開発のダイナミクスを考慮した資源配置の最適化手法の提案を目指しています．
+</p>
+<h5>研究成果</h5>
+<ul> 
+<li> 原田, 小蔵,
+  &ldquo;製品開発における資源配置の最適化手法の提案,&rdquo;
+  <em>第60回自動制御連合講演会</em>, 2017.
+[&nbsp;<a href="http://dx.doi.org/10.11511/jacc.60.0_916">論文</a>&nbsp;| 
+<a href="https://www.gakkai-web.net/gakkai/rengo/program/html/program.html#SaJ1">学会プログラム</a>&nbsp;]
+</ul> 
+
+<h5>関連する文献</h5>
+<ul> 
+<li> <a href="https://www.cadjapan.com/topics/3dcad/110704_dsm.html">DSM-Design Structure Matrix 3D機械設計への応用</a>, CADJapan.com
+<li> 目代, “<a href="http://doi.org/10.15027/28813">製品開発マネジメントの分析ツールとしての設計構造マトリックスに関する考察</a>,” 地域経済研究, vol. 17, 2006.
+<li> 森, “<a href="https://www.toshiba.co.jp/tech/review/2005/01/60_01pdf/b05.pdf">工程・組織効率化のための設計手法</a>,” 東芝レビュー, vol. 60, 2005
+<li> T. R. Browning, “<a href="https://www.researchgate.net/profile/Tyson_Browning/publication/284280227_Design_Structure_Matrix_Extensions_and_Innovations_A_Survey_and_New_Opportunities/links/566adf3c08aea0892c4baa29/Design-Structure-Matrix-Extensions-and-Innovations-A-Survey-and-New-Opportunities.pdf?_sg%5B0%5D=M9lDOpCmGeIFhREbXRPj20QNPIUxFEouS7ugo_gB-hW3Y8fvuc6wwTz83vw6bqTVFkIBRquYZdz3BqAdlOa4kQ.EwLDPNdip9P6OmFYwpXbyzdFXrVKEUBYQJRysY7aCFgJVcoR_XKotPhUUVqX852mQ6F1QZdxzg7T6Rx1RN29Aw&_sg%5B1%5D=1yZVMGhebXp9KSxymj-jSw5Zdl74AGNFpkwcIK09gN7wHZOtJmOsRvji5bA4RlJLWKd2Y7E6kswWG-SqTdcn-sw-gSCGGfKZ3RYOXh7XPPJ1.EwLDPNdip9P6OmFYwpXbyzdFXrVKEUBYQJRysY7aCFgJVcoR_XKotPhUUVqX852mQ6F1QZdxzg7T6Rx1RN29Aw&_iepl=">Design structure matrix extensions and innovations: a survey and new opportunities</a>,” IEEE Transactions on Engineering Management, vol. 63, no. 1, pp. 27–52, 2016. 
+</ul> 
+
+</div>
+
+
+<div class="list">
+<img src="images/tagawa.png">
+<h4>テンポラルネットワーク上の合意制御</h4>
+<p>マルチエージェントシステムにおいて，ネットワークでつながった複数のノードが情報伝達をしてそれらの状態を一致させるとき，ネットワークにおいて合意が達成されるといいます．合意が得られるような状態更新のためのプロトコルを設計し，収束速度や合意点を求める「合意問題」は分散協調制御やセンサーネットワークに応用することができます．これまで，構造が時間変化しないネットワーク，すなわち静的なネットワークに対しての合意問題は活発に検討されてきました．しかし現実に現れる多くの複雑ネットワークは，その構造が時間経過に伴い変化します．</p>
+<p>そこで本研究では，このような時間変化するネットワーク，つまり，テンポラルネットワーク上での合意問題を考えます．数多くあるテンポラルネットワークのモデルの中で， 本研究ではactivity-drivenネットワークと呼ばれる，任意の次数分布を表現できるモデルを用いて収束性能の解析を行っています．
+</p>
+<h5>研究成果</h5>
+<ul> 
+<li> M.&nbsp;Ogura, J.&nbsp;Tagawa, and N.&nbsp;Masuda, &ldquo;Distributed agreement on activity driven
+  networks,&rdquo; in <em>2018 American Control Conference (accepted)</em>, 2018.
+[&nbsp;<a href="http://arxiv.org/abs/1801.07412">プレプリント</a>&nbsp;]
+</ul> 
+
+<h5>関連する文献</h5>
+<ul> 
+<li><a href="http://gaiax-blockchain.com/byzantine-generals-problem">ネットワークでの正しい合意形成を問う問題「ビザンチン将軍問題」</a>
+<li>桜間, “<a href="https://doi.org/10.11509/isciesci.57.9_386">マルチエージェントシステムの制御 : III 合意制御(1)</a>,” システム／制御／情報, vol. 57, pp. 386–396, 2013.
+<li>増田, “<a href="https://jsai.ixsq.nii.ac.jp/ej/?action=repository_action_common_download&item_id=8087&item_no=1&attribute_id=22&file_no=1">テンポラルネットワーク</a>,” 人工知能学会誌, vol. 27, no. 4, pp. 432–436, 2012.
+<li>小蔵, “<a href="https://www.jstage.jst.go.jp/article/sicejl/55/11/55_942/_article/-char/ja/">テンポラルネットワーク上の伝播過程</a>,” 計測と制御, vol. 55, no. 11, pp. 942–947, 2016.
+</ul>
+
+</div>
+
+
+<div class="list" id="socialDistancing">
+<img src="images/school_gakkyu_heisa.png">
+<h4>インフルエンザと学級閉鎖の数理</h4>
+<p>インフルエンザは毎年冬に流行します．学級閉鎖が頻繁に起こります．今年（2018年）の1月22日から28日の間だけでも，日本全体で<a href="https://www0.niid.go.jp/niid/idsc/idwr/infschool17-18/infl17_18-21.pdf">約1万件の学年閉鎖・学級閉鎖がありました</a>．</p>
+
+<p>いろいろ不思議なことがあります．まず，学級閉鎖はいつすれば良いのでしょうか．例えば奈良県では<a href="http://www.pref.nara.jp/secure/36763/20091228kijyun.pdf">10%～15%の欠席率が一つの目安となっています（2009年の情報）</a>．それでは，10%や15%の数字の根拠は何でしょうか．この<a href="http://www.hws-kyokai.or.jp/images/ronbun/all/201207-02.pdf">論文</a>では，「実際に学級閉鎖をどの時期にどの程度の日数で実施すべきかについての知見はほとんどない」とされています．そもそも，学級閉鎖は「役に立つ」のでしょうか．この<a href="http://www.mhlw.go.jp/kinkyu/kenkou/influenza/hourei/2009/09/dl/info0924-01.pdf">報告書</a>では，「通常の学級閉鎖」には「地域への感染拡大を抑える効果はほとんどないと考えられている」ともあります．なぜかというと，通常の学級閉鎖は「消極的」だからだそうです．欠席が増えてから閉鎖するのでは遅すぎて，感染拡大が起こる前に前もって「積極的」に学級閉鎖をするのが有効だとされているようです．</p>
+
+<p>我々の研究グループでは，学級閉鎖やそれを一般化した<a href="http://www.terumo-taion.jp/fever/pandemic/05.html">社会距離戦略</a>の有効性を検証しています．特に，適応的に変化するネットワーク上の感染症のダイナミクスの理解およびその最適な制御手法の開発を目標としています．
+
+<h5>研究成果</h5>
+<ul> 
+<li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Epidemic processes over adaptive
+  state-dependent networks,&rdquo; <em>Physical Review E</em>, vol.&nbsp;93, p. 062316,
+  2016.
+[&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevE.93.062316">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1602.08456">プレプリント</a>&nbsp;]
+</ul>
+
+<h5>関連する論文</h5>
+<ul> 
+<li>小蔵, “<a href="https://www.jstage.jst.go.jp/article/sicejl/55/11/55_942/_article/-char/ja/">テンポラルネットワーク上の伝播過程</a>,” 計測と制御, vol. 55, no. 11, pp. 942–947, 2016.
+<li>“<a href="https://www.jstage.jst.go.jp/browse/isciesci/59/12/_contents/-char/ja">「感染症の数理モデルと制御」特集号</a>,” システム/制御/情報, vol. 59, no. 12, 2015.
+</ul>
+</div>
+
+
+
+<div class="list" id="betHedging">
+<img src="images/E._coli_Bacteria.jpg">
+<h4>大腸菌の両賭け戦略</h4>
+<p>賭けをしたことはありますか？私はありません（ということにしておきます）が，じつは大腸菌も賭けをすることが知られています．「未来の環境が住みやすい」（例：栄養が多い）か「住みにくい」（例：栄養が少ない）かに賭けます（実際には大腸菌が意思を持って賭けをするわけではないのであしからず）．住みやすい方に賭けた大腸菌は，いつも通り成長しようとします．一方，住みにくい方に賭けた大腸菌は，成長はやめておいて身を守るモードに入ります．こうすると，実際に住みにくくなった場合にも身を守れます．こういった大腸菌の機構は<a href="https://www.natureasia.com/ja-jp/nature/462/7269/nature08504/%E4%B8%A1%E8%B3%AD%E3%81%91%E6%88%A6%E7%95%A5%E3%81%AE%E5%AE%9F%E9%A8%93%E7%9A%84%E9%80%B2%E5%8C%96">両賭け戦略</a>（<a href="https://en.wikipedia.org/wiki/Bet_hedging_(biology)">bet-hedging strategy</a>）として知られています．
+</p>
+<p>さて，二つの選択肢がある時，どれくらいの割合で住みやすい／住みにくいに賭けをすると一番良いのでしょうか．本研究では，環境の変化がマルコフ的であるとき，賭けの割合が大腸菌の増殖率に及ぼす影響を数理モデルを使って解析しました．
+
+<h5>研究成果</h5>
+<ul> 
+<li> M.&nbsp;Ogura, M.&nbsp;Wakaiki, H.&nbsp;Rubin, and V.&nbsp;M. Preciado, &ldquo;Delayed bet-hedging
+  resilience strategies under environmental fluctuations,&rdquo; <em>Physical
+  Review E</em>, vol.&nbsp;95, p. 052404, 2017. [&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevE.95.052404">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1702.00094">プレプリント</a>&nbsp;]
+</ul>
+
+<h5>関連する論文</h5>
+<ul> 
+<li> <a href="http://syntheticdaisies.blogspot.jp/2014/01/on-bet-hedging-and-evolutionary-futures.html">On Bet-hedging and Evolutionary Futures</a>, Synthetic Daisies. 
+</ul>
+
+</div>
+
+
+<div class="list" id="KatzCentrality">
+<img src="images/podium.png">
+<h4>ネットワークでランキングを制御する</h4>
+<p>
+（作成中）
+</p>
+<h5>研究成果</h5>
+<ul> 
+<li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Katz centrality of Markovian temporal networks:
+  analysis and optimization,&rdquo; in <em>2017 American Control Conference</em>,
+  2017, pp. 5001-5006.
+[&nbsp;<a href="http://dx.doi.org/10.23919/ACC.2017.7963730">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1609.05962">プレプリント</a>&nbsp;]
+</ul>
+
+<h5>関連する論文</h5>
+<ul> 
+<li> （検索中）
+</ul>
+</div>
+
+
+<div class="list">
+<img src="images/Ethernet_Port.svg.png">
+<h4>遠隔で上手くものを操る―ネットワーク化制御</h4>
+<p>近年の情報技術の発展により，インターネットを介した遠隔制御が実現してきています．ネットワークを使うと配線で楽をできますが，同時に課題も生まれます．たとえば帯域の制限や通信の遅れなどです．この研究では，そういったネットワークの制限のもとで上手にものを操る手法を開発しています．
+</p>
+<h5>研究成果</h5>
+<ul> 
+<li> M.&nbsp;Ogura, A.&nbsp;Cetinkaya, T.&nbsp;Hayakawa, and V.&nbsp;M. Preciado, &ldquo;State feedback
+  control of Markov jump linear systems with hidden-Markov mode observation,&rdquo;
+  <em>Automatica</em>, vol.&nbsp;89, pp. 65-72, 2018.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.automatica.2017.11.022">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1508.00232">プレプリント</a>&nbsp;]
+
+<li> M.&nbsp;Wakaiki, M.&nbsp;Ogura, and J.&nbsp;P. Hespanha, &ldquo;Linear quadratic control for
+  sampled-data systems with stochastic delays,&rdquo; in <em>2017 American
+  Control Conference</em>, 2017, pp. 1978-1983.
+[&nbsp;<a href="http://dx.doi.org/10.23919/ACC.2017.7963242">論文</a>&nbsp;| 
+<a href="https://goo.gl/BkVeOP">プレプリント</a>&nbsp;]
+</ul>
+
+<h5>関連する論文</h5>
+<ul> 
+<li>若生, 岡野, &ldquo;<a href="https://www.jstage.jst.go.jp/article/sicejl/55/11/55_984/_pdf/-char/ja">同期誤差を考慮したネットワーク化制御</a>,&rdquo; 計測と制御, vol. 55, no. 11, pp. 984–989, 2016.
+<li>永原, 松田, 林, &ldquo;<a href="https://www.jstage.jst.go.jp/article/jacc/54/0/54_0_162/_pdf/-char/ja">ネットワーク化制御系における制御信号のスパース表現</a>,&rdquo; 第54回自動制御連合講演会, 2011.
+</ul>
+</div>
+
+
+<div class="list">
+<img src="images/tobestabilized.jpg">
+<h4>切り替えシステムの数理</h4>
+<p>モーターやバネといった単純なモノは一つの方程式で表せます．しかしモノが複雑だったり大規模になると，一つでは足りなくなってきます．例えば車だと，前進／後退のギアの入れ方で動き（方程式）が変わります．国の経済の動きも，好景気のときと不景気のときで動き方が全然違います．このような，複数の（微分）方程式を使わないとうまく表せないモノを制御工学では「切り替えシステム」と呼びます．</p>
+
+<p>切り替えシステムがあったときに，まず調べないといけないのが「安定性」です．この研究では，いろいろな切り替えシステムの安定性を確認する方法を研究しています．とくに，切り替わり方が半マルコフ的な場合にも適用できる安定性の判定法を世界に先駆けて開発しました．</p>
+
+<h5>研究成果</h5>
+<ul> 
+<li> M.&nbsp;Ogura, V.&nbsp;M. Preciado, and R.&nbsp;M. Jungers, &ldquo;Efficient method for computing
+  lower bounds on the <em>p</em>-radius of switched linear systems,&rdquo; <em>Systems
+  &amp; Control Letters</em>, vol.&nbsp;94, pp. 159-164, 2016.
+
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.sysconle.2016.06.008">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1503.03034">プレプリント</a>&nbsp;]
+
+
+<li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Stability of Markov regenerative switched
+  linear systems,&rdquo; <em>Automatica</em>, vol.&nbsp;69, pp. 169-175, 2016.
+
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.automatica.2016.02.022">論文</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1501.03474">プレプリント</a>&nbsp;]
+
+<li> M.&nbsp;Ogura and C.&nbsp;F. Martin, &ldquo;Stability analysis of linear systems subject to
+  regenerative switchings,&rdquo; <em>Systems &amp; Control Letters</em>, vol.&nbsp;75, pp.
+  94-100, 2015.
+
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.sysconle.2014.10.009">論文</a>&nbsp;]
+</ul>
+
+<h5>関連する論文</h5>
+<ul> 
+<li> （検索中）
+</ul>
+</div>
+
+<!--
+<h3 id="controlOfNetworks">ネットワークの制御</h3>
+
+<h4>資源の最適配分</h4>
+
+<p>複雑ネットワーク上で伝播過程を最小コストで押さえ込むための資源配分問題を，凸最適化の手法を用いて効率的に		
+解く手法を開発しました[<a href="http://dx.doi.org/10.1109/TCNS.2015.2489339">TCNS</a>, <a href="http://dx.doi.org/10.1109/CDC.2016.7798393">CDC16</a>, <a href="http://dx.doi.org/10.1109/ACC.2016.7525364">ACC15</a>].
+<center>
+<img src="images/SIR.gif" alt="social distancing" width="30%" />
+<img src="images/SIRresource.jpg" alt="social distancing" width="42%" />
+</center>
+</p>
+
+
+
+</div>
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Masaki Ogura</a> All Rights Reserved.</small>
+<span class="pr">《<a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--スマホ用更新情報　800px以下-->
+
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニューの３本バー-->
+<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>
+
