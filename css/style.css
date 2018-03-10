@@ -81,7 +81,7 @@ header {
 }
 #menubar li a {
 	text-decoration: none;
-	padding: 15px 30px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
+	padding: 15px 15px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
 	color: #fff;	/*文字色*/
 }
 /*マウスオン時の設定*/
