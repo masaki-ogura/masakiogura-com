@@ -37,10 +37,10 @@ img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
 
-/* ジャーナル用設定*/
+/* ジャーナル用設定
 #journals  em {
 	font-weight: bold;
-}
+}*/
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
