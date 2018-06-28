@@ -1,8 +1,0 @@
-$(function($){
-	if ($('#spMenu').css('display') == 'block') {
-		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
-	} else {
-		$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('nav')});
-	}
-	$('.totop').scrollshow({position : 500});
-});

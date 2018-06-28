@@ -1,9 +1,0 @@
-//外部HTMLインクルード用スクリプト
-
-$(document).ready(function(){
-	$("header#header").load("common/common.html header#header > *");
-	$("nav#navi").load("common/common.html nav#navi > *");
-	$("div#sponsors-logos").load("common/common.html div#sponsors-logos > *");
-	$("footer#footer").load("common/common.html footer#footer > *");
-	$("div.totop").load("common/common.html div#totop > *");
-})
