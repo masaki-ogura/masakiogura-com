@@ -137,24 +137,22 @@ header {
 /*SERVICEページ
 ---------------------------------------------------------------------------*/
 /*各ブロックごとの設定*/
-.list {
+.outreach {
 	overflow: hidden;
 	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
 	padding: 20px;	/*ボックス内の余白*/
 }
 /*h4見出しの設定*/
-.list h4 {
+.outreach h4 {
 	color: #25b1d9;	/*文字色*/
 	font-size: 16px;	/*文字サイズ。少し大きくしています。*/
 }
 /*画像の設定*/
-.list img {
-	width: 35%;		/*画像幅*/
-	float: left;	/*画像を左に回り込み*/
-	margin-right: 3%	/*画像の右側に空けるスペース*/
+.outreach img {
+	height: 200px;		/*画像幅*/
 }
-.list p {
-	padding: 0 !important;
+.outreach p {
+	padding-left: 0 !important;
 }
 
 /*peopleページ
