@@ -11,7 +11,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: #333333;	/*全体の文字色*/
-	font-family: "游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
 	
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
