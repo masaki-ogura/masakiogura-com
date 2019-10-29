@@ -20,7 +20,7 @@ body {
 	"MS PGothic", 
 	sans-serif;	/*フォント種類*/
 	
-	font-size: 14px;	/*文字サイズ*/
+	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
 	-webkit-text-size-adjust: none;
 	background: #25b1d9;	/*背景色（古いブラウザ用）*/
