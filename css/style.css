@@ -11,14 +11,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: #333333;	/*全体の文字色*/
-	font-family: 
-	"游ゴシック", YuGothic,
-	"ヒラギノ角ゴ Pro W3", 
-	"Hiragino Kaku Gothic Pro", 
-	"メイリオ", Meiryo, Osaka, 
-	"ＭＳ Ｐゴシック", 
-	"MS PGothic", 
-	sans-serif;	/*フォント種類*/
+	font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica,Arial "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
