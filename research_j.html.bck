@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>研究紹介－小蔵 正輝</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="description" content="ここにサイト説明を入れます">-->
+  <meta name="keywords"
+    content="Masaki Ogura, network science, spreading processes, control theory, switched linear systems, systems biology">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <script type="text/javascript" src="js/openclose.js"></script>
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-86979390-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+  <div id="container">
+
+    <header>
+      <h1 id="logo"><a href="index_j.html"><img src="images/logo.png" alt="Masaki Ogura"></a></h1>
+      <nav id="menubar">
+        <ul>
+          <li><a href="bio_j.html">プロフィール</a></li>
+          <!--<li><a href="toStudents_j.html">学生へ</a></li>-->
+          <li><a href="research_j.html">研究紹介</a></li>
+          <!-- <li><a href="people_j.html">人々</a></li> -->
+          <li><a href="publications_j.html">業績</a></li>
+          <li><a href="outreach_j.html">アウトリーチ</a></li>
+        </ul>
+      </nav>
+      <nav id="menubar-s">
+        <ul>
+          <li><a href="bio_j.html">プロフィール</a></li>
+          <!--<li><a href="toStudents_j.html">学生へ</a></li>-->
+          <li><a href="research_j.html">研究紹介</a></li>
+          <!-- <li><a href="people_j.html">人々</a></li> -->
+          <li><a href="publications_j.html">業績</a></li>
+          <li><a href="outreach_j.html">アウトリーチ</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div id="contents">
+
+      [<a href="research.html">English</a>/日本語]
+
+      <h2>はじめに</h2>
+
+      我々のグループでは，制御工学とネットワーク科学を活用して，いろいろな大規模な現象の原理を解明し，またよりよく操るための研究をしています．理論を究めるというよりは，既存の理論・方法論を対象にあわせてうまく加工・応用することが多いです．以下にいくつか例をあげます．だいたい，上にあればあるほど新しいです．
+
+      <div class="list" id="harada">
+        <img src="images/DUcontrol.png" width="500">
+        <h4>モデルベース制御 × 深層展開</h4>
+        無線通信分野で近年活用されている深層展開の技術を用いたモデルベース制御系設計の研究を進めています．既存手法では理論的な扱いが難しい制御系の設計に著しい効果があることを確認しています．<a href="https://showcase.dropbox.com/doc/--A4c7FrTIefti34_9KEp8gJxyAQ-Zb4cH6WWg0ZiueF4K9NUy" target="_blank"><b>詳細へ >></b></a>
+      </div>
+
+      <div class="list" id="harada">
+        <img src="images/school_gakkyu_heisa.png">
+        <h4>社会的ネットワークにおける感染症制御</h4>
+        <p>インフルエンザは毎年冬に流行します．学級閉鎖が頻繁に起こります．今年（2018年）の1月22日から28日の間だけでも，日本全体で<a
+          href="https://www0.niid.go.jp/niid/idsc/idwr/infschool17-18/infl17_18-21.pdf">約1万件の学年閉鎖・学級閉鎖がありました</a>．我々の研究グループでは，学級閉鎖やそれを一般化した<a
+          href="http://www.terumo-taion.jp/fever/pandemic/05.html">社会距離戦略</a>の有効性を検証しています．特に，適応的に変化するネットワーク上の感染症のダイナミクスの理解およびその最適な制御手法の開発を目標としています．<a href="https://showcase.dropbox.com/doc/--A1lpiV4lv4Wl~LpyFGp4DWf4AQ-xpfvDzPqmE00JZ29v7bPl" target="_blank"><b>詳細へ >></b></a>
+        </p>
+      </div>
+      
+
+      <div class="list" id="harada">
+        <img src="images/harada.png">
+        <h4>制御工学 × 設計工学</h4>
+        <p>製品開発の過程を動的システムによりモデリングします．モデルに対して制御理論の方法論，とくに非負システム理論を適用することで，限られた人的・物的資源を製品開発のネットワークにおいて最適に配置できるようにします．<a href="https://showcase.dropbox.com/doc/--A1iw99gLEBdOi6B9Fih0OHBGAQ-TIYlG0nlgBYmomhczxk80" target="_blank"><b>詳細へ >></b></a>
+        </p>
+      </div>
+
+      <div class="list">
+        <!-- <img src="images/"> -->
+        <h4>テンポラルネットワーク</h4>
+        <p>接続構造が時間変化するネットワークをテンポラルネットワークといいます．<a href="https://showcase.dropbox.com/doc/--A1m1vgAn_nrzZdZ9SBb_l0hKAQ-EBRkEEL10LFNEE2zg0ZRh" target="_blank"><b>詳細へ >></b></a>
+        </p>
+      </div>
+
+      
+
+      <!-- <div class="list">
+        <img src="images/tagawa.png">
+        <h4>テンポラルネットワーク上の合意制御</h4>
+        <p>
+          マルチエージェントシステムにおいて，ネットワークでつながった複数のノードが情報伝達をしてそれらの状態を一致させるとき，ネットワークにおいて合意が達成されるといいます．合意が得られるような状態更新のためのプロトコルを設計し，収束速度や合意点を求める「合意問題」は分散協調制御やセンサーネットワークに応用することができます．これまで，構造が時間変化しないネットワーク，すなわち静的なネットワークに対しての合意問題は活発に検討されてきました．しかし現実に現れる多くの複雑ネットワークは，その構造が時間経過に伴い変化します．
+        </p>
+        <p>そこで本研究では，このような時間変化するネットワーク，つまり，テンポラルネットワーク上での合意問題を考えます．数多くあるテンポラルネットワークのモデルの中で，
+          本研究ではactivity-drivenネットワークと呼ばれる，任意の次数分布を表現できるモデルを用いて収束性能の解析を行っています．
+        </p>
+        <h5>研究成果</h5>
+        <ul>
+          <li> M.&nbsp;Ogura, J.&nbsp;Tagawa, and N.&nbsp;Masuda, &ldquo;Distributed agreement on activity driven
+            networks,&rdquo; in <em>2018 American Control Conference (accepted)</em>, 2018.
+            [&nbsp;<a href="http://arxiv.org/abs/1801.07412">プレプリント</a>&nbsp;] </li>
+          <li> 多川, 小蔵, 増田, 杉本, &ldquo;Activity Driven
+            Networkにおける平均合意の収束性能解析,&rdquo; <em>第5回
+              計測自動制御学会 制御部門マルチシンポジウム</em>, pp.
+            Su23-3, 2018. </li>
+        </ul>
+
+        <h5>関連する文献</h5>
+        <ul>
+          <li><a href="http://gaiax-blockchain.com/byzantine-generals-problem">ネットワークでの正しい合意形成を問う問題「ビザンチン将軍問題」</a>
+          <li>桜間, “<a href="https://doi.org/10.11509/isciesci.57.9_386">マルチエージェントシステムの制御 : III 合意制御(1)</a>,” システム／制御／情報,
+            vol. 57, pp. 386–396, 2013.
+          <li>増田, “<a
+              href="https://jsai.ixsq.nii.ac.jp/ej/?action=repository_action_common_download&item_id=8087&item_no=1&attribute_id=22&file_no=1">テンポラルネットワーク</a>,”
+            人工知能学会誌, vol. 27, no. 4, pp. 432–436, 2012.
+          <li>小蔵, “<a
+              href="https://www.jstage.jst.go.jp/article/sicejl/55/11/55_942/_article/-char/ja/">テンポラルネットワーク上の伝播過程</a>,”
+            計測と制御, vol. 55, no. 11, pp. 942–947, 2016.
+        </ul>
+
+      </div> -->
+
+
+      <!-- <div class="list" id="socialDistancing">
+        <img src="images/school_gakkyu_heisa.png">
+        <h4>インフルエンザと学級閉鎖の数理</h4>
+        
+
+        <h5>研究成果</h5>
+        <ul>
+          <li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Epidemic processes over adaptive
+            state-dependent networks,&rdquo; <em>Physical Review E</em>, vol.&nbsp;93, p. 062316,
+            2016.
+            [&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevE.93.062316">論文</a>&nbsp;|
+            <a href="http://arxiv.org/abs/1602.08456">プレプリント</a>&nbsp;]
+        </ul>
+
+        <h5>関連する論文</h5>
+        <ul>
+          <li>小蔵, “<a
+              href="https://www.jstage.jst.go.jp/article/sicejl/55/11/55_942/_article/-char/ja/">テンポラルネットワーク上の伝播過程</a>,”
+            計測と制御, vol. 55, no. 11, pp. 942–947, 2016.
+          <li>“<a href="https://www.jstage.jst.go.jp/browse/isciesci/59/12/_contents/-char/ja">「感染症の数理モデルと制御」特集号</a>,”
+            システム/制御/情報, vol. 59, no. 12, 2015.
+        </ul>
+      </div>
+ -->
+
+
+      <!-- <div class="list" id="betHedging">
+        <img src="images/E._coli_Bacteria.jpg">
+        <h4>大腸菌の両賭け戦略</h4>
+        <p>
+          賭けをしたことはありますか？私はありません（ということにしておきます）が，じつは大腸菌も賭けをすることが知られています．「未来の環境が住みやすい」（例：栄養が多い）か「住みにくい」（例：栄養が少ない）かに賭けます（実際には大腸菌が意思を持って賭けをするわけではないのであしからず）．住みやすい方に賭けた大腸菌は，いつも通り成長しようとします．一方，住みにくい方に賭けた大腸菌は，成長はやめておいて身を守るモードに入ります．こうすると，実際に住みにくくなった場合にも身を守れます．こういった大腸菌の機構は<a
+            href="https://www.natureasia.com/ja-jp/nature/462/7269/nature08504/%E4%B8%A1%E8%B3%AD%E3%81%91%E6%88%A6%E7%95%A5%E3%81%AE%E5%AE%9F%E9%A8%93%E7%9A%84%E9%80%B2%E5%8C%96">両賭け戦略</a>（<a
+            href="https://en.wikipedia.org/wiki/Bet_hedging_(biology)">bet-hedging strategy</a>）として知られています．
+        </p>
+        <p>
+          さて，二つの選択肢がある時，どれくらいの割合で住みやすい／住みにくいに賭けをすると一番良いのでしょうか．本研究では，環境の変化がマルコフ的であるとき，賭けの割合が大腸菌の増殖率に及ぼす影響を数理モデルを使って解析しました．
+
+        <h5>研究成果</h5>
+        <ul>
+          <li> M.&nbsp;Ogura, M.&nbsp;Wakaiki, H.&nbsp;Rubin, and V.&nbsp;M. Preciado, &ldquo;Delayed bet-hedging
+            resilience strategies under environmental fluctuations,&rdquo; <em>Physical
+              Review E</em>, vol.&nbsp;95, p. 052404, 2017. [&nbsp;<a
+              href="http://dx.doi.org/10.1103/PhysRevE.95.052404">論文</a>&nbsp;|
+            <a href="http://arxiv.org/abs/1702.00094">プレプリント</a>&nbsp;]
+        </ul>
+
+        <h5>関連する論文</h5>
+        <ul>
+          <li> <a href="http://syntheticdaisies.blogspot.jp/2014/01/on-bet-hedging-and-evolutionary-futures.html">On
+              Bet-hedging and Evolutionary Futures</a>, Synthetic Daisies.
+        </ul>
+
+      </div> -->
+
+
+      <!-- <div class="list" id="KatzCentrality">
+        <img src="images/podium.png">
+        <h4>ネットワークでランキングを制御する</h4>
+        <p>
+          （作成中）
+        </p>
+        <h5>研究成果</h5>
+        <ul>
+          <li> M.&nbsp;Ogura and V.&nbsp;M. Preciado, &ldquo;Katz centrality of Markovian temporal networks:
+            analysis and optimization,&rdquo; in <em>2017 American Control Conference</em>,
+            2017, pp. 5001-5006.
+            [&nbsp;<a href="http://dx.doi.org/10.23919/ACC.2017.7963730">論文</a>&nbsp;|
+            <a href="http://arxiv.org/abs/1609.05962">プレプリント</a>&nbsp;]
+        </ul>
+
+        <h5>関連する論文</h5>
+        <ul>
+          <li> （検索中）
+        </ul>
+      </div> -->
+
+
+      <!-- <div class="list">
+        <img src="images/Ethernet_Port.svg.png">
+        <h4>遠隔で上手くものを操る―ネットワーク化制御</h4>
+        <p>
+          近年の情報技術の発展により，インターネットを介した遠隔制御が実現してきています．ネットワークを使うと配線で楽をできますが，同時に課題も生まれます．たとえば帯域の制限や通信の遅れなどです．この研究では，そういったネットワークの制限のもとで上手にものを操る手法を開発しています．
+        </p>
+        <h5>研究成果</h5>
+        <ul>
+          <li> M.&nbsp;Ogura, A.&nbsp;Cetinkaya, T.&nbsp;Hayakawa, and V.&nbsp;M. Preciado, &ldquo;State feedback
+            control of Markov jump linear systems with hidden-Markov mode observation,&rdquo;
+            <em>Automatica</em>, vol.&nbsp;89, pp. 65-72, 2018.
+            [&nbsp;<a href="http://dx.doi.org/10.1016/j.automatica.2017.11.022">論文</a>&nbsp;|
+            <a href="http://arxiv.org/abs/1508.00232">プレプリント</a>&nbsp;]
+
+          <li> M.&nbsp;Wakaiki, M.&nbsp;Ogura, and J.&nbsp;P. Hespanha, &ldquo;Linear quadratic control for
+            sampled-data systems with stochastic delays,&rdquo; in <em>2017 American
+              Control Conference</em>, 2017, pp. 1978-1983.
+            [&nbsp;<a href="http://dx.doi.org/10.23919/ACC.2017.7963242">論文</a>&nbsp;|
+            <a href="https://goo.gl/BkVeOP">プレプリント</a>&nbsp;]
+        </ul>
+
+        <h5>関連する論文</h5>
+        <ul>
+          <li>若生, 岡野, &ldquo;<a
+              href="https://www.jstage.jst.go.jp/article/sicejl/55/11/55_984/_pdf/-char/ja">同期誤差を考慮したネットワーク化制御</a>,&rdquo;
+            計測と制御, vol. 55, no. 11, pp. 984–989, 2016.
+          <li>永原, 松田, 林, &ldquo;<a
+              href="https://www.jstage.jst.go.jp/article/jacc/54/0/54_0_162/_pdf/-char/ja">ネットワーク化制御系における制御信号のスパース表現</a>,&rdquo;
+            第54回自動制御連合講演会, 2011.
+        </ul>
+      </div> -->
+
+      <div class="list">
+        <img src="images/nonnegative.bmp">
+        <h4>非負システム</h4>
+        <p>
+          非負の値をもつ入力に対する応答が非負性を示すような動的システムは非負システムと呼ばれます．薬理学，
+疫学，生物学，通信ネットワークなど幅広い応用をもちます．この研究では，従来用いられてきた線形計画ではなく，幾何計画と呼ばれる広いクラスの最適化手法を用いた非負システムの設計に取り組んでいます．
+<a href="https://showcase.dropbox.com/doc/--A1laxqRBU3bUiC~C2dTrHbZ1AQ-7ykSyI3Mjx9KN93czdIDM" target="_blank"><b>詳細へ >></b></a>
+        </p>
+      </div>
+
+      <div class="list">
+        <img src="images/tobestabilized.jpg">
+        <h4>切り替えシステムの数理</h4>
+        <p>
+          ​​モーターやバネといった単純なモノは一つの方程式で表せます．しかしモノが複雑だったり大規模になると，一つでは足りなくなってきます．例えば車だと，前進／後退のギアの入れ方で動き（方程式）が変わります．国の経済の動きも，好景気のときと不景気のときで動き方が全然違います．このような，複数の（微分）方程式を使わないとうまく表せないモノを制御工学では「切り替えシステム」と呼びます．​<a href="https://showcase.dropbox.com/doc/--A1hKFGCJq6IhJcQauyxFUGkeAQ-qUylY8sytD0WTXZC57Szh" target="_blank"><b>詳細へ >></b></a>
+        </p>
+      </div>
+
+      <!--
+<h3 id="controlOfNetworks">ネットワークの制御</h3>
+
+<h4>資源の最適配分</h4>
+
+<p>複雑ネットワーク上で伝播過程を最小コストで押さえ込むための資源配分問題を，凸最適化の手法を用いて効率的に		
+解く手法を開発しました[<a href="http://dx.doi.org/10.1109/TCNS.2015.2489339">TCNS</a>, <a href="http://dx.doi.org/10.1109/CDC.2016.7798393">CDC16</a>, <a href="http://dx.doi.org/10.1109/ACC.2016.7525364">ACC15</a>].
+<center>
+<img src="images/SIR.gif" alt="social distancing" width="30%" />
+<img src="images/SIRresource.jpg" alt="social distancing" width="42%" />
+</center>
+</p>
+
+
+
+</div>
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Masaki Ogura</a> All Rights Reserved.</small>
+<span class="pr">《<a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+      <!--スマホ用更新情報　800px以下-->
+
+      <script type="text/javascript">
+        if (OCwindowWidth() <= 800) {
+          open_close("newinfo_hdr", "newinfo");
+        }
+      </script>
+
+      <!--メニューの３本バー-->
+      <div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+      <!--メニューの開閉処理条件設定　800px以下-->
+      <script type="text/javascript">
+        if (OCwindowWidth() <= 800) {
+          open_close("menubar_hdr", "menubar-s");
+        }
+      </script>
+
+</body>
+
+</html>
