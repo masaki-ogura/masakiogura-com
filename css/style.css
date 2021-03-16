@@ -162,7 +162,7 @@ header {
 /*各ブロックごとの設定*/
 .list {
 	overflow: hidden;
-	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
+	/* border-bottom: 1px solid #ccc;	下線の幅、線種、色 */
 	padding: 20px;	/*ボックス内の余白*/
 }
 /*h4見出しの設定*/
