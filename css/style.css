@@ -252,6 +252,7 @@ footer .pr {
 	text-align: center;
    }
 
+/* adobeスライド埋め込み */
 div.outerslides{width: 600px; margin: 0px auto;}
 div.innerslides{height: 550px; width: 600px;}
 
@@ -439,5 +440,10 @@ body#top {
 .ta1, .ta1 td, .ta1 th {
 	padding: 5px;			/*テーブル内の余白*/
 }
+
+/* adobeスライド埋め込み */
+div.outerslides{width: 480px; margin: 0px auto;}
+div.innerslides{height: 420px; width: 480px;}
+
 
 }
