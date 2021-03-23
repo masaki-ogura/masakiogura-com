@@ -156,7 +156,7 @@ header {
 }
 /*画像の設定*/
 .outreach img {
-	height: 200px;		/*画像幅*/
+	height: 300px;		/*画像幅*/
 }
 .outreach p {
 	padding-left: 0 !important;

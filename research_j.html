@@ -215,16 +215,17 @@ R.&nbsp;Himo, M.&nbsp;Ogura, and N.&nbsp;Wakamiya, &ldquo;Shepherding algorithm 
 </p>
 
 <p>
-デモンストレーションとして倒立振子の振り上げに提案手法を適用した様子を以下に示します．様々な外乱に対する応答から誤差逆伝播を使ってオープンループ制御入力を学習します．時刻t=5で倒立した状態にさせることを制御目標としています．
+以下に，デモンストレーションとして倒立振子の振り上げに提案手法を適用した様子を紹介します．様々な外乱に対する応答から誤差逆伝播を使ってオープンループ制御入力を学習します．学習の目標は，時刻t=5で振子を倒立した状態にさせることです．問題を難しくするために，振子の動きに対して適度な外乱が存在する状況を考えます．
 </p>
-<p>学習前の様子．制御入力を模索しています．</p>
+
+<p>学習前の様子です．制御入力を模索しています．</p>
 <img src="images/deepControl/incremental0.gif" width=22%>
 <img src="images/deepControl/incremental9.gif" width=22%>
 <img src="images/deepControl/incremental19.gif" width=22%>
 <img src="images/deepControl/incremental29.gif" width=22%>
 
 <br>
-<p>学習後の様子．外乱があっても時刻t=5$において振子を直立させることができています．</p>
+<p>学習後の様子です．時刻t=5において振子を（だいたい）直立させることができています．</p>
 <img src="images/deepControl/incremental_plsh7.gif" width=22%>
 <img src="images/deepControl/incremental_plsh8.gif" width=22%>
 <img src="images/deepControl/incremental_plsh9.gif" width=22%>
