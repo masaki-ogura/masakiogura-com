@@ -211,8 +211,23 @@ R.&nbsp;Himo, M.&nbsp;Ogura, and N.&nbsp;Wakamiya, &ldquo;Shepherding algorithm 
 </h3>
 <img src="images/DUcontrol.png" width=200 style="float:right">
 <p>
-無線通信分野で近年活用されている深層展開の技術を用いたモデルベース制御系設計の研究を進めています．既存手法では理論的な扱いが難しい制御系の設計に著しい効果があることを確認しています．
+無線通信分野で近年活用されている深層展開の技術を用いたモデルベース制御系設計の研究を進めています．既存の理論では扱いが難しい非線形制御系の設計に対する有効性を確認しています．
 </p>
+
+<p>
+デモンストレーションとして倒立振子の振り上げに提案手法を適用した様子を以下に示します．様々な外乱に対する応答から誤差逆伝播を使ってオープンループ制御入力を学習します．時刻t=5で倒立した状態にさせることを制御目標としています．
+</p>
+<p>学習前の様子．制御入力を模索しています．</p>
+<img src="images/deepControl/incremental0.gif" width=30%>
+<img src="images/deepControl/incremental9.gif" width=30%>
+<img src="images/deepControl/incremental19.gif" width=30%>
+
+<br>
+<p>学習後の様子．外乱があっても時刻t=5$において振子を直立させることができています．</p>
+<img src="images/deepControl/incremental_plsh8.gif" width=30%>
+<img src="images/deepControl/incremental_plsh9.gif" width=30%>
+<img src="images/deepControl/incremental_plsh10.gif" width=30%>
+
 
 <h5>スライド</h5>
 
@@ -228,7 +243,7 @@ R.&nbsp;Himo, M.&nbsp;Ogura, and N.&nbsp;Wakamiya, &ldquo;Shepherding algorithm 
 		}, {embedMode: "SIZED_CONTAINER", dockPageControls: false});
 	});
 </script>
-小林恒輝, 小蔵正輝, 岸田昌子, 和田山正, 杉本謙二, “深層学習を活用したフィードバック制御系設計,” 第64回システム制御情報学会研究発表講演会, pp. 276-278, 2020. [ http ]
+小林恒輝, 小蔵正輝, 岸田昌子, 和田山正, 杉本謙二, “深層学習を活用したフィードバック制御系設計,” 第64回システム制御情報学会研究発表講演会, pp. 276-278, 2020. 
 </div>
 
 <h5>参考文献</h5>
