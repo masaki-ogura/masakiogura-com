@@ -18,7 +18,7 @@ body {
 	-webkit-text-size-adjust: none;
 	/* background: #1D529F;	 */
 	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#1D529F 200px, #fff 200px);	/*トップページ以外の背景設定。画面の上から150pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
+	background: linear-gradient(#1D529F 250px, #fff 250px);	/*トップページ以外の背景設定。画面の上から150pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
 }
 body#top {
 	background: linear-gradient(#1D529F 300px, #fff 300px);	/*トップページの背景設定。画面の上から450pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
@@ -70,7 +70,7 @@ a:hover {
 /*headerブロック*/
 header {
 	text-align: center;		/*headerの中身をセンタリングさせる設定*/
-	height: 200px;			/*headerの高さ*/
+	height: 249.5px;			/*headerの高さ*/
 	background: #1D529F;	/*headerの背景色*/
 }
 /*ロゴ画像設定*/
@@ -92,7 +92,8 @@ header {
 }
 #menubar li a {
 	text-decoration: none;
-	padding: 15px 15px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
+	padding: 15px 15px 15px 15px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
+	margin: 15px 15px 15px 15px;
 	color: #fff;	/*文字色*/
 }
 /*マウスオン時の設定*/
