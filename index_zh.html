@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ネットワーク科学・制御工学 || 小蔵 正輝 - 大阪大学</title>
+  <title>Network Science, Control theory || Masaki Ogura - Osaka University</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--<meta name="description" content="ここにサイト説明を入れます">-->
-  <meta name="keywords" content="小蔵 正輝, ネットワーク科学, 伝播過程, 制御理論">
+  <meta name="keywords"
+    content="Masaki Ogura, network science, spreading processes, control theory, switched linear systems, systems biology">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slide.css">
   <script type="text/javascript" src="js/openclose.js"></script>
@@ -21,10 +23,10 @@
 
   <script>
     (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-86979390-1', 'auto');
@@ -36,304 +38,190 @@
   <div id="container">
 
     <header>
-      <h1 id="logo"><a href="index_j.html"><img src="images/logo.png" alt="Masaki Ogura"></a></h1>
+      <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Masaki Ogura"></a></h1>
       <nav id="menubar">
-        <ul>
-          <li><a href="bio_j.html">プロフィール</a></li>
-          <li><a href="research_j.html">　研究紹介　</a></li>
-          <li><a href="publications_j.html">　研究業績　</a></li>
-          <br>
-        </ul>
-        <ul>
-          <li><a href="outreach_j.html">アウトリーチ</a></li>
-          <li><a href="admissions_j.html">学生の方々へ</a></li>
-          <li><a href="index_j.html">日本語</a>/<a href="index.html">English</a></li>
-        </ul>
-      </nav>
-      <nav id="menubar-s">
-        <ul>
-          <li><a href="bio_j.html">プロフィール</a></li>
-          <li><a href="research_j.html">研究紹介</a></li>
-          <li><a href="publications_j.html">業績</a></li>
-          <li><a href="outreach_j.html">アウトリーチ</a></li>
-          <li><a href="admissions_j.html">学生の方々へ</a></li>
-          <li><a href="index_j.html">日本語</a>/<a href="index.html">English</a></li>
-        </ul>
-      </nav>
+				<ul>
+				  <li><a href="bio.html">About me</a></li>
+				  <li><a href="research.html">Research</a></li>
+				  <!-- <li><a href="people.html">People</a></li> -->
+				  <li><a href="publications.html">Publications</a></li>
+				</ul>
+				<ul>
+				  <li><a href="outreach.html">Outreach</a></li>
+          <li><a href="admissions.html">Admission</a></li>
+				  <li><a href="index_j.html">日本語</a>/<a href="index_zh.html">繁体字</a></li>
+				</ul>
+			  </nav>
+		
+			  <nav id="menubar-s">
+				<ul>
+				  <li><a href="bio.html">About me</a></li>
+				  <li><a href="research.html">Research</a></li>
+				  <!-- <li><a href="people.html">People</a></li> -->
+				  <li><a href="publications.html">Publications</a></li>
+				  <li><a href="outreach.html">Outreach</a></li>
+                  <li><a href="admissions.html">Admission</a></li>
+                  <li><a href="index_j.html">日本語</a>/<a href="index_zh.html">繁体字</a></li>
+				</ul>
+			  </nav>
 
     </header>
 
     <!-- <aside id="mainimg">
-      <a href="research_j.html#r_fish"><img src="images/top_fish.png" alt="社会距離戦略"
-          id="slide0"></a>
-      <a href="research_j.html#KatzCentrality"><img src="images/KatzCentrality_cover.png" alt="Katz中心性の操作"
-          id="slide1"></a>
-      <a href="research_j.html#socialDistancing"><img src="images/socialDistancing_cover.png" alt="社会距離戦略"
-          id="slide2"></a>
+      <img src="images/1.png" alt="" id="slide0">
+      <img src="images/1.jpg" alt="" id="slide1">
     </aside> -->
 
     <div id="contents">
 
-      <img src="MasakiOgura.jpg" align="right" style="padding: 8px;" width="175" />
-      <ul>
-        <li>
-          氏名：小蔵 正輝
-        </li>
-        <li>
-          大阪大学大学院 情報科学研究科 バイオ情報工学専攻 准教授
-          <ul>
-            <li>
-              <a href="http://www-waka.ist.osaka-u.ac.jp/">バイオインスパイアードネットワーキング講座</a>
-            </li>
-            <li>m-ogura [at] ist.osaka-u.ac.jp</li>
-            <li>
-              〒565-0871 大阪府吹田市山田丘 1-5 大阪大学情報科学研究科 B506
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <!-- <h2>About me</h2> -->
 
+			<img src="MasakiOgura.jpg" align="right" style="padding:8px" width="175">
+			<ul>
+				<li>
+					名字：小藏正辉
+				</li>
+
+				<!--<li>Assistant Professor, Division of Information Science, Graduate School of Science and Technology, Nara Institute of Science and Technology, Japan-->
+				<li>
+					<a href="vita_MasakiOgura.pdf">简历</a>
+				</li>
+				<li>大阪大学 <a href="http://www.ist.osaka-u.ac.jp/english/">信息科学研究科</a> <a href="http://www.ist.osaka-u.ac.jp/english/research/majors/bio/">生物信息工程系</a> 副教授
+					<ul>
+						<!--<li>Affiliated with the <a href="http://genesis.naist.jp/en/">Intelligent System Control Lab</a></li>-->
+						<li>隶属于<a href="http://www-waka.ist.osaka-u.ac.jp/">生物系统分析实验室</a>
+						</li>
+						<li>m-ogura [at] ist.osaka-u.ac.jp</li>
+						<li>1-5山田丘，B506办公室，信息科学研究科，吹田，大阪，565-0871，日本</li>
+					</ul>
+				<li>
+					文件在
+					<ul>
+						<li>
+							<a href="https://scholar.google.com/citations?user=acKWFswAAAAJ&hl=zh">谷歌学术索引</a>
+							<img src="images/gscholar.png" width="16" />
+						</li>
+
+						<li>
+							Web of Science Researcher ID:
+							<a href="https://publons.com/researcher/R-4980-2016/">R-4980-2016</a>
+						</li>
+						<li>
+							ORCID <img src="images/orcid.png" width="16" />:
+							<a href="https://orcid.org/0000-0002-3857-3942">0000-0002-3857-3942</a>
+						</li>
+						<li>
+							Scopus ID <img src="images/scopus-logo.png" width="16" />: <a
+								href="https://www.scopus.com/authid/detail.uri?authorId=56819736500">56819736500</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</ul>
+
+      <!-- <p>[English/<a href="index_j.html">日本語</a>]</p> -->
 
       <section id="new">
-        <h2 id="newinfo_hdr">最新情報</h2>
 
+        <h2 id="newinfo_hdr">最新消息</h2>
         <dl id="newinfo">
-          <dt>Feb 2022</dt>
-          <dd><a href="https://www.nippyo.co.jp/shop/magazine/8405.html">経済セミナー解説記事</a>の再現プログラムを一ノ瀬先生（静岡大学）らのグループが<a href="https://qiita.com/wsotatata/items/2df48c4395f49dc5aa6d">公開して下さいました</a>．</dd>
-          <dt>Jan 2022</dt>
-          <dd>電子情報通信学会信号処理研究会にて<a href="https://www.ieice.org/ken/paper/20220120tCh3/">講演</a>をさせて頂きました（<a href="https://www.dropbox.com/s/lxv6curcz4hitur/2022-01-20-SIP.pdf?dl=1">スライド</a>）．関係各位に御礼申し上げます．
-          </dd>
-          <dt>Nov 2021</dt>
-          <dd>プレスリリース「制御システムの最適化問題をディープニューラルネットワークで解く」 [&nbsp;<a
-              href="https://www.jst.go.jp/pr/announce/20211104-2/index.html">JST</a>&nbsp;|
-            <a href="https://www.nii.ac.jp/news/release/2021/1104.html">NII</a>&nbsp;|
-            <a href="https://resou.osaka-u.ac.jp/ja/research/2021/20211104_2">OU</a>&nbsp;]
-          </dd>
-          <dt>Oct 2021</dt>
-          <dd>仮想化されたネットワークのモデル予測制御型マネジメントに関する論文が IEICE Transactions on Communications に採録決定しました．橘拓至先生（福井大学）との共同研究です．
-          </dd>
-          <dt>Sep 2021</dt>
-          <dd>計測自動制御学会著述賞を受賞しました．関係各位に御礼申し上げます．</dd>
-          <dt>Aug 2021</dt>
-          <dd>事象駆動型の感染症伝播制御に関する論文 [&nbsp;<a href="http://arxiv.org/abs/2012.15146">arXiv</a>&nbsp;] がAnnual Reviews in
-            Controlに採録決定しました．<a href="https://sites.google.com/view/kazumunehashimoto">橋本和宗先生</a>（阪大工学研究科），<a
-              href="http://ushiolab.sys.es.osaka-u.ac.jp/~ushio/">潮俊光先生</a>（阪大基礎工学研究科）との共同研究です．</dd>
           <dt>May 2021</dt>
-          <dd>UAV空中基地局の自律分散配置法に関する論文がIEEE Transactions on Wireless Communicationsに採録決定しました．<a
-              href="http://www2b.comm.eng.osaka-u.ac.jp/~kimura/">木村達明先生</a>（阪大工学研究科）との共同研究です．</dd>
-          <dt>Apr 2021</dt>
-          <dd>科学研究費 基盤研究（B） 「<a
-              href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-21H01352/">異種マルチエージェントシステム制御における拡散的外部刺激の理論体系の確立と実検証</a>」（代表者，2021/04-2025/03）が採択されました．お世話になった皆様にお礼申し上げます．
-          </dd>
+          <dd>论文接受发表在 <em>Annual Reviews in Control</em> [&nbsp;<a href="http://arxiv.org/abs/2012.15146">arXiv</a>&nbsp;]</dd>
+          <dt>May 2021</dt>
+          <dd>论文接受发表在 <em>IEEE Transactions on Wireless Communications</em> [&nbsp;<a href="http://dx.doi.org/10.1109/TWC.2021.3086815">DOI</a>&nbsp;| 
+            <a href="https://ieeexplore.ieee.org/document/9454276">http</a>&nbsp;]</dd>
           <dt>Mar 2021</dt>
-          <dd>共著者が第36回電気通信普及財団賞テレコムシステム技術学生賞を<a
-              href="https://www.taf.or.jp/files/1895/927165165.pdf#page=12">受賞しました</a>．</dd>
-          <dt>Mar 2021</dt>
-          <dd><a href="admissions_j.html">学生の方々へ</a>のページを更新しました．</dd>
-          <dt>Mar 2021</dt>
-          <dd>Mathematical Biosciences and Engineeringにおける<a
-              href="https://www.aimspress.com/mbe/article/5948/special-articles">ネットワーク上における感染症制御に関する特集号</a>への投稿を募集しています．投稿期限はDec
-            31st, 2021です．</dd>
-          <dt>Jan 2021</dt>
-          <dd><a href="https://www.cyphai.io/home">AI 集約的サイバーフィジカルシステムの形式的解析設計手法</a>，国立研究開発法人科学技術振興機構 CREST</dd>
+          <dd><a href="https://www.aimspress.com/mbe/article/5948/special-articles">正在接受投稿到</a> Mathematical Biosciences and Engineering. 提交截止日期是2022年3月 </dd>
           <dt>Dec 2020</dt>
-          <dd>Panelist at <a href="https://sites.google.com/view/covid-19-focus-sessions/home?authuser=0">COVID-19 FOCUS
-              SESSIONS</a> in 2020 IEEE CDC</dd>
-          <dt>Nov 2020</dt>
-          <dd>経済セミナー2020年12月・2021年1月号に<a href="https://www.nippyo.co.jp/shop/magazine/8405.html">解説記事が掲載されます</a>．</dd>
-          <dt>Oct 2020</dt>
-          <dd>電子情報通信学会ネットワークシステム研究専門委員会 第8回英語セッション奨励賞を受賞しました．</dd>
-          <dt>Oct 2020</dt>
-          <dd><a href="https://siceqforum20.wordpress.com/">SICE九州支部フォーラム2020</a>にて講演させて頂きます．
-          <dt>Aug 2020</dt>
-          <dd>無線通信における送信電力制御に関する論文が電子情報通信学会論文誌Bに採録決定しました．
+          <dd>2020年 IEEE CDC COVID-19 <a href="https://sites.google.com/view/covid-19-focus-sessions/home?authuser=0">焦点会议</a>的小组成员</dd>
           <dt>Jul 2020</dt>
-          <dd>深層展開を用いた合意制御に関する論文 [&nbsp;<a href="http://dx.doi.org/10.1109/TAC.2019.2960697">DOI</a>&nbsp;|
-            <a href="http://arxiv.org/abs/1904.12976">arXiv</a>&nbsp;|
-            <a href="https://ieeexplore.ieee.org/document/8936427">http</a>&nbsp;] が IEEE Access 誌に採録決定しました．
+          <dd>Paper on deep learning-based average consensus accepted for publication in <em>IEEE Access</em> [&nbsp;<a href="http://arxiv.org/abs/1908.09963">arXiv</a>&nbsp;]. 
           <dt>Jun 2020</dt>
-          <dd>Journal of Franklin Institute にて<a
-              href="https://www.journals.elsevier.com/journal-of-the-franklin-institute/call-for-papers/-recent-advances-in-positive-systems-and-their-applications">非負システムに関する特集号</a>の原稿募集をしています．
-          <dt>Jun 2020</dt>
-          <dd>
-            <a href="https://postcorona-sice.github.io/ws2020_1.html">第１回SICEポストコロナ未来社会ワークショップ</a>にて講演させて頂きました（<a
-              href="https://www.dropbox.com/s/n69a0ejzjhybjke/2020-06-06_postcorona-sice.pdf?dl=0">スライド</a>）．
-          </dd>
-          <dt>May 2020</dt>
-          <dd>京都大学医学部<a href="http://shimono-u.net/">下野研究室</a>にて講演させて頂きました（<a
-              href="https://www.dropbox.com/s/pntgm2ydyko25uu/2020-05-29_%E4%B8%8B%E9%87%8E%E7%A0%94%E7%A9%B6%E5%AE%A4.pdf?dl=0">スライド</a>）．
-          </dd>
-          <dt>May 2020</dt>
-          <dd>分担執筆の教科書『ネットワーク化制御』の小蔵担当部分（感染拡大の基本モデルであるSISモデルと伝搬抑制の問題について）が<a
-              href="https://www.coronasha.co.jp/np/isbn/9784339032277/">6月末までの期間限定で公開されています</a>．より多くの研究者がこの喫緊の課題に取り組み，感染の拡大が早期に終息するために本書がお役に立てば幸いです．
-          </dd>
+          <dd>Journal of Franklin Institute 期刊 positive systems <a href="https://www.journals.elsevier.com/journal-of-the-franklin-institute/call-for-papers/-recent-advances-in-positive-systems-and-their-applications">特刊的客座编辑</a>.</dd>
           <dt>Apr 2020</dt>
-          <dd>IEEE Transactions on Network Science and Engineering 誌に論文 [&nbsp;<a
-              href="http://dx.doi.org/10.1109/TNSE.2020.2998491">DOI</a>&nbsp;] が採録決定しました．ペンシルバニア大学との共同研究です．</dd>
-          <dt>Apr 2020</dt>
-          <dd>深層学習を用いた行列分解に関する研究課題が<a
-              href="https://www.taf.or.jp/files/items/1589/File/2019%E5%B9%B4%E5%BA%A6-%E7%A0%94%E7%A9%B6%E8%AA%BF%E6%9F%BB%E5%8A%A9%E6%88%90-%E9%80%9A%E5%B8%B8%E6%9E%A0.pdf#page=3">採択されました</a>（電気通信普及財団・研究調査助成）．関係各位に御礼申し上げます．
-          </dd>
-          <dt>Mar 2020</dt>
-          <dd>第26回情報ネットワーク研究会研究賞を<a
-              href="https://www.ieice.org/cs/in/jpn/award.html">受賞しました</a>．会田先生（首都大学東京），高野先生（広島市立大学）との共同研究です．</dd>
+          <dd>论文接受发表在 <em>IEEE Transactions on Network Science and Engineering</em> [&nbsp;<a href="http://dx.doi.org/10.1109/TNSE.2020.2998491">DOI</a>&nbsp;]．</dd>
           <dt>Jan 2020</dt>
-          <dd>Associate Editor, Journal of The Franklin Institute</dd>
-          <dt>Jan 2020</dt>
-          <dd>香港大学に滞在します．ホスト：James Lam教授</dd>
+          <dd>访问香港大学（主办人：James Lam 教授）</dd>
+          <!-- <dt>Dec 2019</dt>
+          <dd>Seminars at <em>Shenzhen University</em> and <em>Guandong University of Technology</em> [&nbsp;<a href="https://www.dropbox.com/s/5lywdlqm0stacx5/2019-12-26_ShenzhenUniversity.pdf?dl=0">Slides</a>&nbsp;].</dd>
           <dt>Dec 2019</dt>
-          <dd>Guangdong University of Technology で講演を行います．ホスト：Panshuo Li 博士</dd>
-          <dt>Dec 2019</dt>
-          <dd>Shenzhen University で講演を行いました（<a
-              href="https://www.dropbox.com/s/5lywdlqm0stacx5/2019-12-26_ShenzhenUniversity.pdf?dl=0">スライド</a>）．ホスト：Yucan
-            Cui 博士．</dd>
-          <dt>Dec 2019</dt>
-          <dd>幾何計画を用いた非負システムの最適化に関する論文が<em>IEEE Transactions on Automatic
-              Control</em>に採録決定しました．国立情報学研究所・香港大学との共同研究です．[&nbsp;<a
+          <dd>Paper on positive systems accepted for publication in <em>IEEE TAC</em>. [&nbsp;<a
               href="http://arxiv.org/abs/1904.12976">arXiv</a>&nbsp;]</dd>
-          </dt>
           <dt>Dec 2019</dt>
-          <dd>自律分散的なUAV配備に関する論文が<em><a href="https://infocom2020.ieee-infocom.org/">IEEE INFOCOM
-                2020</a></em>に採録決定しました（採択率19.8%）．<a
-              href="http://www2b.comm.eng.osaka-u.ac.jp/~kimura/index.html">木村先生</a>（大阪大学工学研究科）との共同研究です．</dd>
-          </dd>
+          <dd>Paper on distributed deployment of UAVs accepted at <em>IEEE INFOCOM 2020</em> (acceptance rate 19.8%).</dd>
           <dt>Nov 2019</dt>
-          <dd>大阪大学大学院 情報科学研究科
-            <a href="http://www.ist.osaka-u.ac.jp/japanese/research/majors/bio/">バイオ情報工学専攻</a> バイオシステム解析学講座（<a
-              href="http://www-waka.ist.osaka-u.ac.jp/">若宮研究室</a>）に
-            准教授として着任いたしました．関係各位に深く御礼申し上げます．
-          </dd>
+          <dd>Moved to Osaka University as an Associate Professor. </dd>
           <dt>Aug 2019</dt>
-          <dd>深層学習を応用した合意制御に関する<a href="http://arxiv.org/abs/1908.09963">プレプリント</a>が公開されました．</dd>
-          <dt>Aug 2019</dt>
-          <dd><a href="https://sites.google.com/view/network-science-seminar-2019/">ネットワーク科学セミナー2019</a>にて講演させて頂きます．
-          </dd>
-          <dt>Aug 2019</dt>
-          <dd>香港大学に滞在します．ホスト：James Lam教授．<a href="http://me.hku.hk/index.php?cid=2&tpl=news_info&id=411">セミナー</a>．</dd>
+          <dd>Visiting the <em>University of Hong Kong</em> (Host: Professor James Lam)</dd>
           <dt>Jul 2019</dt>
-          <dd>慶應義塾大学足立研セミナーにて<a href="https://arx.appi.keio.ac.jp/adachi-lab-seminars/">講演させて頂きます</a>．</dd>
-          <dt>Jul 2019</dt>
-          <dd>著書が発行されました（<a href="http://www.coronasha.co.jp/np/isbn/9784339032277/">コロナ社のページ</a>）．</dd>
-          <dt>Jul 2019</dt>
-          <dd>2019 American Control Conference にて発表します．</dd>
-          <dt>Jul 2019</dt>
-          <dd>制御工学の設計工学応用に関する論文が<em><a href="https://dsm-conference.org/">21st International DSM
-                Conference</a></em>に採録決定しました</dd>
+          <dd>ACC 2019 (<a href="http://acc2019.a2c2.org/"><em>2019 American Control Conference</em>)</a></dd>
           <dt>Apr 2019</dt>
-          <dd>KEC 関⻄電⼦⼯業振興センター<a href="https://www.kec.jp/seminar/jisedai19/">次世代ワイヤレス技術講座</a>にて講師を務めさせていただきます．</dd>
+          <dd>Paper on epidemics on adaptive activity-driven networks accepted for publication in <em>SIAM Journal on
+              Applied Mathematics</em> [&nbsp;<a href="http://arxiv.org/abs/1802.08961">arXiv</a>&nbsp;]</dd>
           <dt>Apr 2019</dt>
-          <dd>論文が<em>IEEE Transactions on Circuits and Systems II:
-              Express Briefs</em>に採録決定しました [&nbsp;<a href="http://arxiv.org/abs/1902.02954">arXiv</a>&nbsp;]．</dd>
-          <dt>Apr 2019</dt>
-          <dd>論文が<em>SIAM Journal on Applied Mathematics</em>に採録決定しました [&nbsp;<a
-              href="http://arxiv.org/abs/1802.08961">arXiv</a>&nbsp;]．</dd>
-          <dt>Apr 2019</dt>
-          <dd>制御工学と設計工学の融合研究に関する研究課題が<a
-              href="https://www.nii.ac.jp/research/upload/2019_NII_koubo-kyoudou_list.pdf">採択されました</a>（国立情報学研究所・自由提案公募型共同研究）．
-            <!--<a href="https://www.nii.ac.jp/faculty/informatics/kishida_masako/">岸田昌子 准教授</a>ならびに関係各位に御礼申し上げます．-->
-          </dd>
-          <dt>Apr 2019</dt>
-          <dd><a href="https://www.comsoc.org/publications/journals/ieee-tnse/ieee-tnse-best-paper-award">Runner-up of
-              the 2019 Best Paper Award</a> from the <em>IEEE Transactions on Network Science and Engineering</em> for
-            paper with V. M. Preciado. &ldquo;Stability of spreading processes over
+          <dd>Runner-up of the 2019 Best Paper Award from the <em>IEEE Transactions on Network Science and
+              Engineering</em> for paper with V. M. Preciado. &ldquo;Stability of spreading processes over
             time-varying large-scale networks&rdquo;
             [&nbsp;<a href="http://dx.doi.org/10.1109/TNSE.2016.2516346">DOI</a>&nbsp;|
             <a href="http://arxiv.org/abs/1507.07017">arXiv</a>&nbsp;|
             <a href="http://ieeexplore.ieee.org/document/7377119/">http</a>&nbsp;]
           </dd>
           <dt>Mar 2019</dt>
-          <dd>制御工学の設計工学応用に関する論文が<em><a href="https://link.springer.com/journal/163">Research in Engineering
-                Design</a></em>に採録決定しました [&nbsp; <a
-              href="http://arxiv.org/abs/1903.09964">arXiv</a>&nbsp;]．M2原田，岸田先生（国立情報学研究所），Yassine先生（American University
-            of Beirut）との共同研究です．</dd>
+          <dd>Paper accepted for publication in <em><a href="https://link.springer.com/journal/163">Research in
+                Engineering Design</em></a> [&nbsp;<a href="http://arxiv.org/abs/1903.09964">arXiv</a>&nbsp;]</dd>
           <dt>Mar 2019</dt>
-          <dd>非マルコフ的なSISモデルに関する論文 [&nbsp;<a href="http://dx.doi.org/10.1109/TCNS.2019.2905131">DOI</a>&nbsp;|
-            <a href="http://arxiv.org/abs/1606.08518">arXiv</a>&nbsp;] が<em>IEEE Transactions on Control of Network
-              Systems</em>に採録決定しました．
-          </dd>
-          <dt>Feb 2019</dt>
-          <dd><a href="http://isw3.naist.jp/IS/PubWG/Spring2019/index-ja.html">スプリングセミナー</a>を実施します．テーマ：「<a
-              href="images/ss2019.pdf">ランダムウォークを利用して重要なwebページを見つけ出そう</a>」．<a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfvef4sKGeDAruJmqGKn6BzPbBifQGuDknklsComlw9GpiMVg/viewform">申し込み</a>．
-          <dt>Jan 2019</dt>
-          <dd>電子情報通信学会IT/SIP/RCS研究会にて<a href="https://www.ieice.org/ken/paper/20190131g18z/">招待講演</a>をさせて頂きます．
-          </dd>
+          <dd>Paper accepted for publication in <em>IEEE Transactions on Control of Network Systems</em> [&nbsp;<a
+              href="http://dx.doi.org/10.1109/TCNS.2019.2905131">DOI</a>&nbsp;|
+            <a href="http://arxiv.org/abs/1606.08518">arXiv</a>&nbsp;]
+          <dt>Dec 2018</dt>
+          <dd>Visiting student: Mr. Bohao Zhu (University of Hong Kong)</a></dd>
+          <dt>Nov 2018
           <dt>
-            Jan 2019
-          </dt>
-          <dd>電子情報通信学会 基礎・境界ソサイエティ IEICE Fundamentals Reviewにて<a
-              href="https://www.jstage.jst.go.jp/article/essfr/12/3/12_191/_article/-char/ja">解説記事</a>が出版されました．</dd>
-          <dt>Jan 2019</dt>
-          <dd>自立分散型送信電力制御に関する論文がAmerican Control Conference 2019に採録決定しました．岸田先生（国立情報学研究所），林先生（大阪市立大学），Lam先生（University of
-            Hong Kong）との共同研究です．
-          </dd>
-          <dt>Dec 2018</dt>
-          <dd>Bohao Zhu氏（香港大学）が2週間滞在します．</dd>
-          <dt>Dec 2018</dt>
-          <dd>日本オペレーションズ・リサーチ学会<a href="http://www.orsj.or.jp/queue/">待ち行列研究部会</a>にて<a
-              href="http://www.orsj.or.jp/activity/sigannai.html#machi">講演</a>をさせて頂きました．<a
-              href="http://www-lsm.naist.jp/~kasahara/">笠原教授</a>ならびに関係各位に御礼申し上げます．</dd>
-          <dt>Nov 2018</dt>
-          <dd>生駒市立大瀬中学校で<a href="http://www.city.ikoma.lg.jp/0000015801.html">出前授業</a>をさせて頂きました．</dd>
-          <!--<dt>Nov 2018</dt>
-<dd>M2多川が<a href="https://rengo61.iscie.or.jp/">	
-第61回自動制御連合講演会</a>で研究成果「Simplicial Activity Drivenネットワークの合意制御」を発表します．</dd>
-<dt>Nov 2018</dt>
-<dd>M2原田が<a href="https://www.jsme.or.jp/conference/dsdconf18/index.html">	
-日本機械学会 第28回設計工学・システム部門講演会</a>で研究成果「設計プロジェクトにおける追加タスクの影響を最小化するためのロバスト最適化」を発表します．</dd>-->
-          <dt>Nov 2018</dt>
-          <dd>M2蓼沼が5th IFAC Conference on Analysis and Control of Chaotic SystemsにてIFAC Young Author
-            Awardのfinalistに選ばれました（<a href="http://arxiv.org/abs/1810.00318">論文</a>）．</dd>
+          <dd>Master student Toshihide Tadenuma chosen as a finalist of the IFAC Young Author Award at the
+            5th IFAC Conference on Analysis and Control of Chaotic Systems for his <a
+              href="http://arxiv.org/abs/1810.00318">paper</a> on networked control systems</dd>
+          <dt>Oct 2018</dt>
+          <dd><a href="https://dsmconferenceblog.wordpress.com/">20th International DSM Conference</a></dd>
+          <dt>Aug 2018</dt>
+          <dd>NMPC 2018 (<a href="http://www.nmpc2018.org/">6th IFAC Conference on Nonlinear Model Predictive
+              Control</a>)</dd>
+          <dt>Jul 2018</dt>
+          <dd>Visiting the University of Hong Kong</dd>
+          <dt>Jul 2018</dt>
+          <dd>MTNS 2018 (<a href="http://mtns2018.ust.hk/">23rd International Symposium on Mathematical Theory of
+              Networks and Systems</a>)</dd>
           <dt>Jun 2018</dt>
-          <dd>Wan教授（Inner Mongolia University of Technology），笠原教授（奈良先端科学技術大学院大学）との<a
-              href="http://arxiv.org/abs/1806.03375">データセンター電力最適化に関する論文</a>が国際学会 <a href="http://www.nmpc2018.org/">6th
-              IFAC Conference on Nonlinear Model Predictive Control</a> に Oral Presentation として採録決定しました．</dd>
-          <dt>Apr 2018</dt>
-          <dd>複雑ネットワークの制御に関する研究課題に関する研究課題が採択されました（科研費・若手研究）．関係各位に御礼申し上げます.</dd>
-          <dt>Apr 2018</dt>
-          <dd>非負システムの最適制御に関する研究課題が採択されました（国立情報学研究所・自由提案公募型共同研究）．
-            <!--<a href="https://www.nii.ac.jp/faculty/informatics/kishida_masako/">岸田昌子 准教授</a>ならびに関係各位に御礼申し上げます．-->
-          </dd>
-          <!--<dt>Mar 2018</dt>
-<dd><a href="https://sci18.iscie.or.jp/">SCI’18</a>にてテンポラルネットワークに関する<a href="https://sci18.iscie.or.jp/specials/#TS04-invited">招待講演</a>をさせて頂きます．<a href="http://www.bode.amp.i.kyoto-u.ac.jp/~kashima/index-j.html">加嶋健司 准教授</a>ならびに関係各位に御礼申し上げます．</dd>-->
-          <!--<dt>Mar 2018</dt>
-<dd>M1原田とのデータ駆動型のネットワーク資源配置に関する論文 [<a href="http://arxiv.org/abs/1801.09753">arXiv</a>] が国際学会 <a href="http://mtns2018.ust.hk/">MTNS</a> に採録決定しました．</dd>-->
-          <dt>Mar 2018</dt>
-          計測自動制御学会 制御部門大会賞を<a href="http://www.sice-ctrl.jp/about/award/honorees/">受賞</a>いたしました．関係各位に御礼申し上げます．
-          <!--<dt>Mar 2018</dt>
-<dd>研究成果「<a href="https://www.gakkai-web.net/gakkai/ieice/G_2018/Settings/ab/b_06_009.html">サービスチェイニングにおけるVNFインスタンス管理のためのモデル予測制御</a>」が<a href="http://www.ieice-taikai.jp/2018general/jpn/">電子情報通信学会総合大会</a>で発表されます．</dd>
-<dt>Mar 2018</dt>
-<dd>M1多川が<a href="http://mscs2018.sice-ctrl.jp/">制御部門マルチシンポジウム</a>で研究成果「<a href="https://www.gakkai-web.net/gakkai/sice-ctrl/temporary/program.html#pointSu23">Activity Driven Networkにおける平均合意の収束性能解析</a>」を発表します．</dd>
-<dt>Jan 2018</dt>
-<dd>M1多川，<a href="http://www.naokimasuda.net/index_j.html">増田直紀講師（ブリストル大学）</a>とのテンポラルネットワーク上の分散合意に関する論文 [<a href="http://arxiv.org/abs/1801.07412">arXiv</a>] が国際学会 <a href="http://acc2018.a2c2.org/">ACC</a> に採録決定しました．</dd>-->
+          <dd>ACC 2018 (<a href="http://acc2018.a2c2.org/">2018 American Control Conference)</a></dd>
           <dt>Jan 2018</dt>
-          <dd>計測自動制御学会 関西支部 支部長賞 奨励賞を<a
-              href="http://www.sice.or.jp/org/kansai/award/h29award.html">受賞</a>いたしました．関係各位に御礼申し上げます．</dd>
-          <!--<dt>Jan 2018</dt>
-<dd><i>Systems & Control Letters</i> に論文 [<a href="http://arxiv.org/abs/1706.08602">arXiv</a>] の採録が決定しました．</dd>-->
-          <dt>Nov 2017</dt>
-          <dd>生駒市立緑ヶ丘中学校で<a
-              href="http://www.ed.city.ikoma.nara.jp/school/midori-j/Gyouji/Gyouji2.pdf#page=7">出前授業</a>をさせて頂きました．関係各位に御礼申し上げます．
+          <dd>Paper accepted in <i>Systems & Control Letters</i> [<a href="http://arxiv.org/abs/1706.08602">arXiv</a>]
           </dd>
-          <!--<dt>Nov 2017</dt>
-<dd>M1原田が<a href="www.sice.or.jp/rengo60/">自動制御連合講演会</a>で研究成果「<a href="https://www.gakkai-web.net/gakkai/rengo/program/html/program.html#SaJ1">製品開発における資源配置の最適化手法の提案</a>」を発表します．</dd>-->
-          <!--<dt>Oct 2017</dt>
-<dd>著書（分担執筆） [&nbsp;<a href="http://dx.doi.org/10.1007/978-981-10-5287-3_11">DOI</a>&nbsp;| 
-<a href="http://arxiv.org/abs/1612.06832">arXiv</a>&nbsp;| 
-<a href="http://link.springer.com/10.1007/978-981-10-5287-3_11">http</a>&nbsp;] が出版されました．</dd>
-<dt>Jul 2017</dt>
-<dd><a href="http://www.ton.scphys.kyoto-u.ac.jp/~shino/mathmodel/modeling170707.html">第4回 数理モデリング研究会</a>にて招待講演をさせて頂きました．</dd>
-<dt>Mar 2017</dt>
-<dd>奈良先端科学技術大学院大学に移りました．</dd>
-<dt>Nov 2016</dt>
-<dd><a href="テンポラルネットワーク上の伝播過程">解説記事</a>が<a href="http://www.sice.or.jp/org/journal/moku55-11.html">計測と制御</a>に掲載されました．<a href="https://nagahara-masaaki.github.io/index_j.html">永原正章 教授</a>ならびに関係各位にお礼申し上げます．</dd>
-<dt>May 2016</dt>
-<dd>大規模なテンポラルネットワーク上の伝播過程に関する論文が<a href="http://ieee.ns02.info/xpl/topAccessedArticles.jsp?punumber=6488902&amp;topArticlesDate=May+2016">TNSE popular article</a>のトップになりました.</dd>
--->
+          <dt>Oct 2017</dt>
+          <dd>Book chapter published [&nbsp;<a href="http://dx.doi.org/10.1007/978-981-10-5287-3_11">DOI</a>&nbsp;|
+            <a href="http://arxiv.org/abs/1612.06832">arXiv</a>&nbsp;|
+            <a href="http://link.springer.com/10.1007/978-981-10-5287-3_11">http</a>&nbsp;]</dd>
+          <dt>Sep 2017</dt>
+          <dd>Member of IFAC Technical Committee on <i>Networked Systems</i></dd>
+          <dt>Aug 2017</dt>
+          <dd>Paper accepted in <i>Automatica</i> [<a href="http://arxiv.org/abs/1508.00232">arXiv</a>]</dd>
+          <dt>May 2017</dt>
+          <dd>Seminar at Washington State University</dd>
+          <dt>Apr 2017</dt>
+          <dd>Paper accepted in <i>Physical Review E</i> [<a href="http://arxiv.org/abs/1702.00094">arXiv</a>]</dd>
+          <dt>Mar 2017</dt>
+          <dd>Joining the Nara Institute of Science and Technology as an Assistant Professor</dd>
+          <dt>Sep 2016</dt>
+          <dd>Seminar at <a href="https://sites.google.com/site/takiyama1106/home/seminar">Tokyo University of
+              Agriculture and Technology</a></dd>
+          <dt>Aug 2016</dt>
+          <dd>Our paper published in <i>IEEE Transactions on Network Science and Engineering</i>
+            was the <a
+              href="http://ieee.ns02.info/xpl/topAccessedArticles.jsp?punumber=6488902&amp;topArticlesDate=May+2016">most
+              popular
+              article</a> in the journal during May 2016</dd> -->
       </section>
 
     </div>
-
+    <!--/contents-->
 
     <footer>
       <small>Copyright&copy; <a href="index.html">Masaki Ogura</a> All Rights Reserved.</small>
@@ -342,6 +230,8 @@
 
   </div>
   <!--/container-->
+
+
 
   <!--スマホ用更新情報　800px以下-->
   <script type="text/javascript">
