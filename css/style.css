@@ -23,15 +23,15 @@ body {
 	line-height: 2;
 	/*行間*/
 	-webkit-text-size-adjust: none;
-	/* background: #1D529F;	 */
+	/* background: #005e3c;	 */
 	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#1D529F 250px, #fff 250px);
-	/*トップページ以外の背景設定。画面の上から150pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
+	background: linear-gradient(#005e3c 250px, #fff 250px);
+	/*トップページ以外の背景設定。画面の上から150pxまでが#005e3cで、そこからすぐ#fffの白色に切り替える内容。*/
 }
 
 body#top {
-	background: linear-gradient(#1D529F 300px, #fff 300px);
-	/*トップページの背景設定。画面の上から450pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
+	background: linear-gradient(#005e3c 300px, #fff 300px);
+	/*トップページの背景設定。画面の上から450pxまでが#005e3cで、そこからすぐ#fffの白色に切り替える内容。*/
 }
 
 h1,
@@ -107,7 +107,7 @@ a {
 }
 
 a:hover {
-	color: #1D529F;
+	color: #005e3c;
 	/*マウスオン時の文字色*/
 }
 
@@ -130,7 +130,7 @@ header {
 	/*headerの中身をセンタリングさせる設定*/
 	height: 249.5px;
 	/*headerの高さ*/
-	background: #1D529F;
+	background: #005e3c;
 	/*headerの背景色*/
 }
 
@@ -201,7 +201,7 @@ header {
 	/*文字色*/
 	padding: 5px 20px;
 	/*上下、左右への余白*/
-	background: #1D529F;
+	background: #005e3c;
 	/*背景色*/
 }
 
@@ -240,7 +240,7 @@ header {
 
 /*h4見出しの設定*/
 .outreach h4 {
-	color: #1D529F;
+	color: #005e3c;
 	/*文字色*/
 	font-size: 18px;
 	/*文字サイズ。少し大きくしています。*/
@@ -268,7 +268,7 @@ header {
 
 /*h4見出しの設定*/
 .list h4 {
-	color: #1D529F;
+	color: #005e3c;
 	/*文字色*/
 	font-size: 18px;
 	/*文字サイズ。少し大きくしています。*/
@@ -379,7 +379,7 @@ footer .pr {
 }
 
 .color1 {
-	color: #1D529F;
+	color: #005e3c;
 }
 
 .pr {
@@ -417,10 +417,10 @@ div.innerslides {
 		line-height: 2;
 		/*行間*/
 		-webkit-text-size-adjust: none;
-		background: #1D529F;
+		background: #005e3c;
 		/*背景色（古いブラウザ用）*/
-		background: linear-gradient(#1D529F 150px, #fff 150px);
-		/*トップページ以外の背景設定。画面の上から150pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
+		background: linear-gradient(#005e3c 150px, #fff 150px);
+		/*トップページ以外の背景設定。画面の上から150pxまでが#005e3cで、そこからすぐ#fffの白色に切り替える内容。*/
 	}
 
 
@@ -429,7 +429,7 @@ div.innerslides {
 		/*headerの中身をセンタリングさせる設定*/
 		height: 150px;
 		/*headerの高さ*/
-		background: #1D529F;
+		background: #005e3c;
 		/*headerの背景色*/
 	}
 
@@ -538,15 +538,15 @@ div.innerslides {
 		line-height: 2;
 		/*行間*/
 		-webkit-text-size-adjust: none;
-		background: #1D529F;
+		background: #005e3c;
 		/*背景色（古いブラウザ用）*/
-		background: linear-gradient(#1D529F 125px, #fff 125px);
-		/*トップページ以外の背景設定。画面の上から150pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
+		background: linear-gradient(#005e3c 125px, #fff 125px);
+		/*トップページ以外の背景設定。画面の上から150pxまでが#005e3cで、そこからすぐ#fffの白色に切り替える内容。*/
 	}
 
 	body#top {
-		background: linear-gradient(#1D529F 125px, #fff 125px);
-		/*トップページの背景設定。画面の上から450pxまでが#1D529Fで、そこからすぐ#fffの白色に切り替える内容。*/
+		background: linear-gradient(#005e3c 125px, #fff 125px);
+		/*トップページの背景設定。画面の上から450pxまでが#005e3cで、そこからすぐ#fffの白色に切り替える内容。*/
 	}
 
 	#menubar-s {
@@ -624,11 +624,11 @@ div.innerslides {
 	/*トップページ内「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
 	#new h2.open {
-		background: #1D529F url(../images/btn_minus.png) no-repeat right center/34px 34px;
+		background: #005e3c url(../images/btn_minus.png) no-repeat right center/34px 34px;
 	}
 
 	#new h2.close {
-		background: #1D529F url(../images/btn_plus.png) no-repeat right center/34px 34px;
+		background: #005e3c url(../images/btn_plus.png) no-repeat right center/34px 34px;
 	}
 
 	/*テーブル
