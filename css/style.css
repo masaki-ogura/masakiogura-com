@@ -136,7 +136,7 @@ header {
 
 /*ロゴ画像設定*/
 #logo img {
-	width: 700px;
+	width: 500px;
 	/*画像幅*/
 	margin-top: 5px;
 	/*画像の上に空けるスペース*/
@@ -162,7 +162,7 @@ header {
 	text-decoration: none;
 	padding: 15px 15px 15px 15px;
 	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
-	margin: 15px 15px 15px 15px;
+	margin: 5px 5px 5px 5px;
 	color: #fff;
 	/*文字色*/
 }
