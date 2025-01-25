@@ -160,11 +160,15 @@ header {
 
 #menubar li a {
 	text-decoration: none;
-	padding: 15px 15px 15px 15px;
+	padding: 10px 10px 10px 10px;
 	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
 	margin: 5px 5px 5px 5px;
 	color: #fff;
 	/*文字色*/
+}
+
+#menubar ul {
+	padding-left: 0px;
 }
 
 /*マウスオン時の設定*/
