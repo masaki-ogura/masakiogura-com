@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://s-shinomoto.com/mathmodel/modeling240912.html -->
+<html lang="ja" data-google-analytics-opt-out="" data-locale="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>第21回数理モデリング研究会</title>
+<link rel="stylesheet" href="./第21回数理モデリング研究会_files/bootstrap.min.css">
+<link href="./第21回数理モデリング研究会_files/css" rel="stylesheet"> 
+<!-- Custom styles for this template -->
+<style>
+em{color:blue}
+h4{padding-top: 10pt ;
+font-family: 'Montserrat', sans-serif;
+}
+h5{ font-family: 'Montserrat', sans-serif; text-decoration: underline;}
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+font-family: 'Montserrat', sans-serif;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  
+  .message {
+    position: relative;
+}
+.message span.remark {
+    display: none;
+}
+.message a:hover span.remark {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    display: block;
+    line-height: 1.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    position: absolute;
+    top: 10px;
+    width: 40em;
+}
+}
+
+</style>
+
+<style>.cip-genpw-icon.cip-icon-key-small {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_16x16.png); }
+.cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
+</style></head>
+
+<body data-new-gr-c-s-check-loaded="14.1071.0" data-gr-ext-installed="">
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="http://www.ed.kagawa-u.ac.jp/~aoki/">Back to Home</a></li>
+          </ul>
+        </nav>
+         <!-- ここを修正 --> 
+         <h3>第21回 数理モデリング研究会: <br>
+           Workshop on interdisciplinary study for swarm control: problem formulation, theory, and methods.
+         </h3>
+         <!-- ここを修正 -->
+      </div>
+
+      
+      <div class="row marketing">
+
+<!-- ここから修正 -->
+<h4>Date : Aug 22nd - Aug 24th, 2025.</h4>
+
+<h4>Venue :</h4>
+<!-- International Seminar House for Advanced Studies, National Institute of Informatics (NII)　-->
+場所：NII国際高等セミナーハウス in 軽井沢
+<br>
+この研究会は2025年度国立情報学研究所公募型共同研究「群制御の手法探索と社会実装へ向けた学際的な検討」の補助を受けています．
+
+
+<h4>Organizers:</h4>
+小蔵正輝（広島大学），水野貴之（国立情報学研究所），青木高明（香川大学）
+
+
+<h4>Invited Speaker:</h4>
+<ul>
+<li>Cameron Nowzari（George Mason University）[<a href="https://people-ece.vse.gmu.edu/~cnowzari/" target="blank">www</a>] </li>
+</ul>
+
+<h4>Attendees:</h4>
+青木高明，加納剛史，小林亮太，小山慎介，篠本滋，田中琢真，長田穣，Cameron Nowzari，深澤遊，水野貴之，小蔵正輝（順不同，敬称略）
+
+<!--
+  <h4>Aim:</h4>
+<p>
+イベント時系列データとは、あるイベントが起きた時刻についてのデータです．このようなデータはTwitter・YouTube などのオンライン上の行動履歴から、
+金融市場における注文履歴、神経スパイク、地震履歴など分野横断的に見られます．
+これらのデータから有用な情報を取り出すためには、新しいデータマイニング技術が必要です．
+本研究会では，Web・社会データ分析、経済学、脳科学、地球科学などの分野においてイベント時系列データの分析を行っている研究者と
+情報学、統計学などの分野においてデータ解析アルゴリズムの開発を行っている研究者を集め、
+各分野における問題意識と解析技術について議論することにより、データマイニング技術を発展させ情報学と応用分野間の交流を進めます．
+</p>
+-->
+
+<h4>Program:</h4>
+<p>Friday (Aug 22)</p>
+<ul>
+<li>14:00 – 14:40 小林亮太（東京大学）[<a href="https://www.hk.k.u-tokyo.ac.jp/r-koba/index.html" target="blank">www</a>] <br>
+  <em>SNSにおける分極化の数理モデリング</em>
+
+<li>15:00 – 15:40 水野貴之（国立情報学研究所）[<a href="https://research.nii.ac.jp/~mizuno/index.html" target="blank">www</a>]<br>
+<em>学術界の持続可能性を測る：研究者人口ピラミッドによる評価フレームワークの提案</em></li>
+</ul>
+
+<br>
+
+
+<p>Saturday (Aug 23)</p>
+<ul>
+
+<li>9:00 – 9:40 加納剛史（はこだて未来大学）[<a href="https://www.fun.ac.jp/faculty/kano-takeshi" target="blank">www</a>] <br>
+  <em>対人技能における「切磋琢磨」的学習メカニズム</em>
+</li>
+
+<li>10:00 – 10:40 篠本滋（京都大学，立命館大学，広島大学[要確認]）[<a href="https://sites.google.com/view/shigerushinomoto/" target="blank">www</a>]<br>
+<em>Emergence of non-differentiable activity in the brain</em></li>
+
+<li>11:00 – 14:00 昼食 および 自由討論<br>
+  
+<li>14:00 – 17:00 Cameron Nowzari（George Mason University）[<a href="https://people-ece.vse.gmu.edu/~cnowzari" target="blank">www</a>]<br>
+<em>TBD</em></li>
+
+</ul>
+
+<br>
+
+<p>Sunday (Aug 24)</p>
+<ul>
+
+<li>10:00 – 10:40 深澤遊（東北大学）[<a href="https://sites.google.com/view/yu-fukasawas-website" target="blank">www</a>]<br>
+<em>菌類の菌糸ネットワークと情報伝達</em></li>
+
+
+<li>11:00 – 11:40 長田穣（東北大学）[<a href="https://researchmap.jp/yutaka_osada?lang=ja" target="blank">www</a>]<br>
+<em>次元削減近似と生物群集の安定性</em></li>
+</li>
+
+
+
+</ul>
+
+<!--
+<h4>Photos:</h4>
+<img src="./第21回数理モデリング研究会_files/workshop_2024_08.jpg" alt="Group Photo" width="700" class="img-rounded">
+<br>
+-->
+
+
+
+<!-- ここまで修正 -->
+
+
+
+  </div>
+    </div> <!-- /container -->
+
+
+<script src="./第18回数理モデリング研究会_files/第18回数理モデリング研究会.html"></script><script type="module" src="chrome-extension://dkdhhcbjijekmneelocdllcldcpmekmm/content_scripts_polyfill.js"></script>
+
+
+<span style="border-radius: 10px !important; text-indent: 12px !important; width: auto !important; height: 20px !important; padding: 0px 8px !important; text-align: center !important; vertical-align: middle !important; font: bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 1090px; left: 316px;">保存</span><span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 1090px; left: 974px;"></span><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><a id="__TIMER_INJECTION_FLAG__dkdhhcbjijekmneelocdllcldcpmekmm" style="visibility: hidden;"></a></body><div><template shadowrootmode="closed"><style>
+.common li, .common span, .common a, .common input, .common img, .common h4,
+.popup, .engine-editor{
+    direction: ltr;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: sans-serif;
+	vertical-align: baseline;
+	background: transparent;
+	color: #202020;
+	text-align: left;
+	line-height: normal;
+	white-space: normal;
+	-webkit-box-shadow: none;
+	-webkit-border-radius:0;
+	text-shadow: none;
+	float: none;
+	overflow: visible;
+}
+.common li, .common p, .common div, .common ul, .common h4{
+	display: block;
+}
+.common h4{
+	font-weight: bold;
+}
+.common ul{
+	list-style-type: none;
+}
+.common span, .common img{
+	display: inline;
+}
+.common input{
+	display: inline-block;
+	white-space: pre;
+}
+.common a:after, .common a[href^="http"]:after {
+  content: '';
+}
+.engine-editor{
+
+    z-index: 2147483647;
+	padding: 0.5em;
+	width: 35em;
+	font-size: 9pt;
+	background: #EDEDED;
+	border: 3px solid #878787;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 8px #B0B0B0;
+}
+.engine-editor input[type='text']{
+	width: 100%;
+	margin-bottom: 0.5em;
+	padding: 0.1em 0;
+	display: block;
+	border: 1px solid #A0A0A0;
+	background: #fff;
+	-webkit-border-radius: 2px;
+}
+.engine-editor input[type='button']{
+	width: auto;
+	display: inline-block;
+	margin-top: 0.5em;
+	margin-right: 0.5em;
+	padding: 0.2em 0.4em;
+	text-align: center;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#E0E0E0));
+	border: 1px solid #A0A0A0;
+	-webkit-border-radius: 2px;
+}
+.engine-editor input[type='button']:hover{
+	border: 1px solid #7C7C7C;
+}
+.engine-editor input[type='button']:active{
+	background: -webkit-gradient(linear, left top, left bottom, from(#E0E0E0), to(#F5F5F5));
+}
+.engine-editor input[type='button']:disabled{
+	color: #AAAAAA;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E7E7E7), to(#D3D3D3));
+}
+.engine-editor h4{
+	margin: 0;
+	height: 1.5em;
+	font-size: 1.1em;
+	padding-bottom: 0.3em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid #CECECE;
+}
+.engine-editor input.close{
+	float: right;
+	margin: 0;
+	height: 1.4em;
+	width: 1.4em;
+	padding-bottom: 0.3em;
+	vertical-align: middle;
+}
+.engine-editor span.title{
+	float: left;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+
+.popup{
+ width: 12em;
+ position: absolute;
+ background: #EDECEC;
+ border: solid 1px #AEAAA7;
+ padding: 0.3em 0.3em;
+ font-size: 9pt;
+ margin: 0;
+ list-style-type: none;
+ -webkit-box-shadow: 0px 1px 10px #ccc;
+ display: block;
+ font-family: sans-serif;
+z-index: 2147483647;
+}
+.popup li{
+ margin: 1px 0;
+ padding: 0;
+ text-align: left;
+ color: #202020;
+ display: block;
+ font-family: sans-serif;
+}
+.popup input{
+	width: 10.1em;
+}
+.popup img{
+ width: 16px;
+ height: 16px;
+ vertical-align: middle;
+ border:none;
+ margin: 0;
+ margin-right: 4px;
+ display: inline;
+}
+.popup.mainmenu > li:first-child {
+ overflow: hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ border-bottom: solid 1px #AEAAA7;
+ margin-bottom: 0.5em;
+ padding: 0.2em 0.3em;
+}
+.popup a{
+ margin: 1px;
+ text-decoration: none;
+ color: #202020;
+ display: block;
+ padding: 0.2em 0.3em;
+ -webkit-border-radius: 3px;
+ font-family: sans-serif;
+}
+.popup a:hover, .popup a.active{
+ background: #96B8E1;
+}
+.popup .engine-name{
+ display: inline-block;
+ width: 8.5em;
+ overflow: hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ vertical-align: middle;
+}
+.button {
+ position:absolute;
+ background: #fafafa;
+ background-repeat: no-repeat;
+ background-position: center center;
+ -webkit-border-radius: 3px;
+ border: 1px solid #aaaaaa;
+ width: 16px;
+ height: 16px;
+ font-family: sans-serif;
+ z-index: 2147483647;
+}
+.popup .engine-separator{
+ height: 1px;
+ margin: 3px 0;
+ background: #AEAAA7;
+}
+.popup.hidden{
+	display: none;
+}
+</style><style></style><style></style><div style="display: none; position: absolute;" class="engine-editor common"><h4 style="padding-left: 20px; background: url(&#39;chrome-extension://gipnlpdeieaidmmeaichnddnmjmcakoe/img/icon16.png&#39;) no-repeat left top;"><input style="background: url(&#39;chrome-extension://gipnlpdeieaidmmeaichnddnmjmcakoe/img/close.png&#39;) no-repeat center center;" class="close" type="button" value=""><span class="title">Add search engine</span></h4><div style="display: none;"><span>Name:</span><input type="text"><span>Url:</span><input type="text"><span>Icon url:</span><input type="text"></div><div style="background: url(&quot;chrome-extension://gipnlpdeieaidmmeaichnddnmjmcakoe/img/ajax-loader.gif&quot;) center center no-repeat; height: 50px; width: 100%;"></div><p style="display: none; color: #CB4345;"></p><input type="button" value="Save"><input type="button" value="Cancel"></div><ul class="popup common hidden mainmenu"><li><input type="text"></li><li><a class="engine-url"><img class="engine-img" referrerpolicy="no-referrer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEVHcEz7+/v+/v709PX////7+/v09fX4+Pj////8/Pz7+/v////z+PP29vf09PX////+/v7///////////83qlfrQzPsTkFHiPUlpkszf/RAhfX6uwD8wBLW4vyQs/j96N3/+vPh8eR8wJiHrfjylpBhuXftX0rR6Nb608j0qKNwofBKsGWzy/rzn5n0o57uc2/94J78zFb3u7es1rC6z/rHuTCVsC08ooagt3gtAAAAE3RSTlMA08Eb4kVwOqb5kV7jkn8NfnFw9v5R3wAAAVtJREFUOI2dU9lywjAMTIAchgmljU3sJBRycRZoocf//1ltyZ4cpi/dl0jeHWllxY7TxVPgecGT8weCkMQAEgaP6EncwcSShPEAYZ+fDHlZ5BG/P9T1YW8rRnhyYRoXzEeGn0G6XrKlBmNrOJppAVZnmpNftt1gDeSfVbhhwNa3W83Y1hh9aR1eFX/G43N/kjEYyCR/sGcdG4vvWb692jzYnKrgI88znL96RVQrlU3NJWdSgM5FihBv5sKHggSR9gW5FKx1BSGUSHwawQI8ZHl2B8FK4ZgmAjwspMDDKb4obc2nsgIEnrnpzTeltDF8lSbpsb1r2OWdS8Vpp8KiVAWgA+4TesSNFFBOm+bE+U8iqraD47gqJidVQ4NjA1eve4ydS6PgvGw3AfAxL0oOKAvM/fafi4z/YrcrTBx1/9q5vcj54N2QPk3sx+V3JMS3aKgSuUTCjR49zf/jF+G2OgtU1MugAAAAAElFTkSuQmCC"><span class="engine-name">Google</span></a></li><li><a class="engine-url"><img class="engine-img" referrerpolicy="no-referrer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABr0lEQVRYhe3Xv48MYQDG8c87uTjubkmEjd+hkEs0crfRiUahYVfhDxCUCpVoVBKiENGKnEKiccUFEY2C2uxFIuQo/CgUGw171p5iRzEzCiGxs5sdxT3J5H0zmed9vsX7zjwTkiRRpqJS01cB/geAkE8StXEcxSx2o4oKJrNxQ/Z8wPq/rPcVCXrZvI1v2djCezTxMIhXfgEkavuxkAWPQh/QCOIXIVFbhzfYMaLwXB8xHeF4CeGwC/UIB0oIz3Uwwr4SAfZG2N6XpbqR0w2ioZzgrRE29WWZWMutizy/w6HZQQGqEaYKWWemeXqTe1fZs60owFRxgFwnDvN6nitnqUz0664M51U8voYLJ3m7wKl6X/uj9G/B2FBWWfnB9btcnqPd6Rtg2SD7YP4J52/w7lMRd7s4wOIS567xrFkkONfyGD5jyz9bOl3OXOL2A3q9QcKhFRK1xzgy6EoF9SjCq5LC4WWEuESAZl5IlrBzxOFpIQni7zgm7WujDK8Hcff3UtrAjLQbbpaWz8nsyktpJC2pf1JeShN8kR7xTna/Je2Ci7gfxF0Iq79mqwBlA/wEihVj07SFCdQAAAAASUVORK5CYII="><span class="engine-name">Youtube</span></a></li><li><a class="engine-url"><img class="engine-img" referrerpolicy="no-referrer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC+klEQVRYhe2WS2hTaRTHf+emVk1iU4ui4jDqnesDEbRWwS7c6CxkZiMoikKhDELdiI+FD5jBU1CoK8UH6kZhXAwjiMKgjAMzMLsRsT4oRdMkVhErItU2ualokuOiCZaxNklNVdD/7pzvfH9+3/kO373wVV+6pJJmvrrLcjjHwbZM0njHRwXobXMj1S+dbqDWIJYhs3yydr8ots+pFEDd3kSfiWwBTMAbR9Vvdp7AmALYeQJJ9RYW4kn7uy4YdiAfrvE7vYNjCpDq9I4JtPutc1sKuTBxBbucD3cn1dswkseoZ2DgwJxZ2UzgP2B6PnUuhL9VtCfd2+ZGqgfkGiLzgTRkG8N6/85wPqPuwMSf7z+ATD3wbz7V5BO61q/uvLq9ib6cBNYCfUDQCFzq13lTKgoAENbuJyG++R44BBiwyMG5nlRvfY1G74rQxOBQznHIDjuUZV9BSuduFugP0nVFlFwh7+t3aw05C9TmYY6EZkT2pB/37TOhNV92OKyxXUP9yupAb5sbATtu2B8pvGhqv7djMAchjV/KYsuBW/mD7fR7+v8ROGPIRYOUYHf/71lWB5LqLRTsFMjKQs4g6cCvWXJHazQRNZ09wSdwEqQ5X/IUoylTRbz2l1j8gwAK8tVbatg2kE3A+LcsXEXsaMjiV9N4zQYngGeO0RhsjT0azuuDnuLkQW+q89paDNkKzByyFDWzY+YEbotln4/0XSgZwFf3BxNnsom0hxd0RWUD2cKanW4Yl+p5sQ5ku8CKIdv2hTXWNpJvyQAp9f4GVgEY+MBtB24C7TjcDE6LdEjLjde+ussMZzvY6oGJVfOn7rmXrBTAn0AjUPOekldAh8EN4FYO+yui8Vgx37JmwBQnieuJSL0YS0HqwRpA6t41zv0Y0sSVUQOcOfe7AfzUtLEoZFrdbzMiDWKyRAaBFmepXhzRzt5iPlXFzEtRUBMPgYfAxXL3lgyQUs/KMQ5rrKTrrdgf0WhVcgdKPVG5+vw7UJjisdIn78BXfXK9AUEcGEtNVbieAAAAAElFTkSuQmCC"><span class="engine-name">Stackoverflow</span></a></li><li><a class="engine-url"><img class="engine-img" referrerpolicy="no-referrer" src="data:image/x-icon;base64,AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wJZ//8DWv//BFv//wRa//8CWv//AVn//wFZ//8BWf//AVn//wJa//8EWv//BFv//wNa//8CWf//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AVj//wNa//8EW///AVj//wBT//8ATv//AEz//wBN//8AUf//AFP//wBU//8AVP//AFP//wBR//8ATf//AEz//wBO//8AU///AVj//wRb//8DWv//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wJZ//8EW///AVf//wBP//8ATP//Alf//yJv//9QjP//e6n//57A//+30P//x9v//8zd///M3f//x9v//7fQ//+fwP//fKn//1CM//8ib///Alf//wBM//8AUP//AVj//wRb//8BWf//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8BWf//A1v//wFU//8ATP//Bln//0GD//+Rt///0uL///r8///////////////////////////////////////////////////////////////////6/P//0eH//461//88gP//BFf//wBM//8BVf//BFv//wFZ//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wNb//8BVf//AEz//xdn//96qP//2+f////////+///////////////8/f//+/z///v8///8/f///P3///z9///8/f///P3///z9///7/P//+/z///z9////////////////////////1eP//3Gi//8SYv//AEz//wJW//8DW///AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8CWf//A1n//wBM//8UY///h7H///D1/////////v////3+///7/P///f7///7//////////v7///3+///8/f//+/3///v8///7/P//+/3///z9///9/v///v7////////+/////f3///v8///9/v///v/////////q8f//eqn//w1d//8ATv//AVj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wNb//8BU///AFH//2Sb///r8f////////7+///7/f///f7//////////////f7///v8///9/f////////////////////////////////////////////////////////39///7/P///f7//////////////f3///v9///+/v///////+Hs//9QjP//AFX//wFZ//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//BFv//wBO//8bZ///udL////////9/v//+/3///7+/////////v7///v8///9/v//////////////////9vn//9rn//+/1f//q8j//6DB//+gwf//q8j//8DW///b5///9/r///////////////////3+///7/f///v/////////9/v//+/3///z9////////Z5v//wBO//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//0SD///q8f////////v8///9/v////////7////7/f///v7////////+////0+L//4my//9Ih///HGr//wRa//8AUv//AE///wBN//8ATf//AE///wBS//8EWv//HWv//0uJ//+Otf//2Ob//////////////v7///z9////////+/z///////+yzf//Cl///wBX//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wRa//8ATP//Ypj///3+///+/////P3//////////////P3///39////////9fj//57A//83ff//Alf//wBM//8AT///AFT//wBX//8CWf//A1r//wRb//8EW///A1r//wJZ//8AV///AFP//wBO//8ATP//BFj//z+C//+px///+fv////////7/P///////7HN//8FVf//AFT//wFZ//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//BFr//wBM//9wof////////z9///9/v/////////////8/f////////z9//+cvv//H2z//wBN//8BUP//AVj//wRb//8DWv//Aln//wFY//8AWP//AFj//wBY//8AWP//AFj//wBY//8BWP//Aln//wNa//8EW///AVj//wFP//8ATv//KHP//6nH////////sc3//wRV//8BVv//Alr//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//2ea/////////P3///7+/////////v7///v8////////0OD//zZ8//8ATP//AVP//wNb//8DWv//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wNa//8DWv//AFH//wBP//86f///El7//wBU//8CWv//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wNb//8ATv//TIf////////9/v///v7////////+/v///P3///////+Vuv//Blf//wBQ//8EW///Aln//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//Alr//wNa//8AUP//Alf//wFZ//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//Alr//wBS//8lbP//7PP////////9/v////////7+///9/v///////2uf//8ATP//A1f//wNa//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wJZ//8EW///BFv//wNa//8AWP//AFj//wJZ//8FW///BFv//wRa//8AWP//AFj//wBY//8DWv//AVn//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AVj//wJV///B1v////////z9/////////v////3+////////XZX//wBK//8FW///AVn//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFn//wBS//8ATP//AEz//wBQ//8AWP//AFn//wBT//8AS///AEv//wBO//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//3ek////////+/z//////////////P3///////9nm///AEr//wVb//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8CWf//AFH//0iH//+Uuf//kbf//2OZ//8AVf//AFP//zB3//+HsP//gq3//2qd//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wJZ//8AU///JWz///L3/////////v7////////7/f///////4qy//8AS///BVv//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//4aw/////////////7fQ//8AU///AE7//2CX/////////////9Xj//8AWP//AFj//wFY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wNa//8ATv//pMP////////8/f////////z9////////wNb//wJU//8CWP//AVn//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//4Gt/////////////7LN//8AU///AE7//16W/////////////9Dg//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//A1r//wBP//9Dgf////////7+/////////v/////////1+f//LHH//wBR//8CWv//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//4Kt/////////////7PN//8AU///AE7//16W/////////////9Hh//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AVj//wJV///G2f////////39////////+/3///////+Cq///AEz//wRb//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AEz//4aw/////////////7fQ//8AU///AE7//2CX/////////////9Xj//8AWP//AFj//wFY//8AWP//AFj//wBY//8AWP//AFj//wBY//8EW///AE3//2aY/////////P3////////9/v///////9zo//8OXf//AFb//wFZ//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8CWf//AFT//zF4//9lmv//ZJn//0SF//8AVv//AFT//yRw//9lmv//Ypj//1CM//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AVf//EV///+Hs/////////v7////////8/f///////12T//8ATf//A1v//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFn//wBS//8ATP//AEz//wBQ//8AWP//AFn//wBU//8ATP//AEz//wBP//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8ATv//j7X////////5+////P3///z9////////v9X//wBT//8BWf//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wJZ//8EW///BFv//wNa//8AWP//AFj//wFZ//8EW///BFv//wNa//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AVf//Soj//8ba/////////v////3+////////PHz//wBQ//8DWv//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWf//AE///wBS//9ChP//uND///////+dvf//AE3//wNb//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//A1r//wJZ//8AT///AE///0CD//8gaf//AFT//wFZ//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8DWv//Alr//wBQ//8BVf//AFn//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wNa//8BWf//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AWP//AFj//wBY//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="><span class="engine-name">jcs.jalan.net</span></a></li></ul></template></div></html>
